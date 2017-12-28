@@ -1,0 +1,1006 @@
+  998  pip install numpy
+  999  cd opencv-3.1.0/
+ 1000  cd build/
+ 1001  cmake -D CMAKE_BUILD_TYPE=RELEASE     -D CMAKE_INSTALL_PREFIX=/usr/local     -D INSTALL_PYTHON_EXAMPLES=ON     -D INSTALL_C_EXAMPLES=OFF     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.1.0/modules     -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python     -D BUILD_EXAMPLES=ON ..
+ 1002  exit
+ 1003  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && rosrun turtlebot_node  base_node "
+ 1004  cd
+ 1005  cd catkin-ws/
+ 1006  ls
+ 1007  cd ..
+ 1008  cd catkin_ws/
+ 1009  ./start_ros.sh 
+ 1010  vim start_ros.sh 
+ 1011  ./start_ros.sh 
+ 1012  ifconfig
+ 1013  sudo vi /etc/hosts
+ 1014  ./start_ros.sh 
+ 1015  catkin_make install 
+ 1016  ./start_ros.sh 
+ 1017  catkin_make install 
+ 1018  ./start_ros.sh 
+ 1019  ifconfig
+ 1020  ./start_ros.sh 
+ 1021  ls
+ 1022  cd src/svg_ros/src/GUI/
+ 1023  ls
+ 1024  chmod +x sensor.py 
+ 1025  ls
+ 1026  cd ..
+ 1027  catkin_make install 
+ 1028  ./start_ros.sh 
+ 1029  catkin_make install 
+ 1030  ./start_ros.sh 
+ 1031  catkin_make install 
+ 1032  ./start_ros.sh 
+ 1033  catkin_make install 
+ 1034  ./start_ros.sh 
+ 1035  catkin_make install 
+ 1036  ./start_ros.sh 
+ 1037  catkin_make install 
+ 1038  ./start_ros.sh 
+ 1039  cd
+ 1040  cd catkin_ws/
+ 1041  catkin_make install 
+ 1042  ping 8.8.8.8
+ 1043  cd src/
+ 1044  ls
+ 1045  cd turtlebot_node/
+ 1046  ls
+ 1047  chmod +x start_turtlebot.sh 
+ 1048  ls
+ 1049  ./start_turtlebot.sh 
+ 1050  rosinstall ~/ros/indigo/turtlebot https://raw.githubusercontent.com/turtlebot/turtlebot/indigo/turtlebot.rosinstall /opt/ros/indigo
+ 1051  ./start_turtlebot.sh 
+ 1052  rosinstall ~/ros https://raw.githubusercontent.com/turtlebot/turtlebot/indigo/turtlebot.rosinstall
+ 1053  sudo apt-get install ros-indigo-turtlebot ros-indigo-turtlebot-apps ros-indigo-turtlebot-interactions ros-indigo-turtlebot-simulator ros-indigo-kobuki-ftdi ros-indigo-rocon-remocon ros-indigo-rocon-qt-library ros-indigo-ar-track-alvar-msgs
+ 1054  run apt-get update 
+ 1055  sudo  apt-get update 
+ 1056  sudo apt-get install ros-indigo-turtlebot ros-indigo-turtlebot-apps ros-indigo-turtlebot-interactions ros-indigo-turtlebot-simulator ros-indigo-kobuki-ftdi ros-indigo-rocon-remocon ros-indigo-rocon-qt-library ros-indigo-ar-track-alvar-msgs
+ 1057  ./start_turtlebot.sh 
+ 1058  ls
+ 1059  cat start_turtlebot.sh 
+ 1060  vi start_turtlebot.sh 
+ 1061  ./start_turtlebot.sh 
+ 1062  ls
+ 1063  cd src
+ 1064  ls
+ 1065  ./start_turtlebot.sh 
+ 1066  ls
+ 1067  cd
+ 1068  cd catkin_ws/
+ 1069  cd src/
+ 1070  ls
+ 1071  cd turtlebot_node/
+ 1072  ls
+ 1073  ./start_turtlebot.sh 
+ 1074  cd
+ 1075  source  catkin_ws/devel/setup.bash
+ 1076  cd catkin_ws/src/turtlebot_node/
+ 1077  ls
+ 1078  ./start_turtlebot.sh 
+ 1079  rosrun turtlebot_node  base_node 
+ 1080  source /opt/ros/indigo/setup.bash 
+ 1081  rosrun turtlebot_node  base_node 
+ 1082  rosrun  base_node 
+ 1083  rosrun turtlebot_node  base_node 
+ 1084  catkin_make
+ 1085  rosrun  base_node 
+ 1086  ls
+ 1087  source 
+ 1088  rosrun turtlebot_node  base_node 
+ 1089  cd
+ 1090  source catkin_ws/devel/setup.bash 
+ 1091  cd catkin_ws/src/turtlebot_node/
+ 1092  ls
+ 1093  ./start_turtlebot.sh 
+ 1094  rosrun 
+ 1095  rosservice 
+ 1096  rosservice list
+ 1097  rosservice /move_robot 2 3
+ 1098  rosservice call /move_robot 2 3
+ 1099  rosservice call /move_robot 
+ 1100  rosservice call /
+ 1101  rosservice call /move_robot 
+ 1102  export ROS_MASTER_URI=http://localhost:11311
+ 1103  rosrun move_robot
+ 1104  rosrun move_robot  3 3
+ 1105  rosrun   /move_robot  3 3
+ 1106  rosrun   /move_robot 
+ 1107  rosrun  turtle_node  /move_robot 
+ 1108   
+ 1109  ./start_turtlebot.sh 
+ 1110  cat start_turtlebot.sh 
+ 1111  ./start_turtlebot.sh 
+ 1112  sudo ./start_turtlebot.sh 
+ 1113  sudo apt-get install ros-indigo-hokuyo-node
+ 1114  ls -l /dev/ttyACM0
+ 1115  sudo chmod a+rw /dev/ttyACM0 
+ 1116  rosparam set hokuyo_node/calibrate_time false
+ 1117  rosrun hokuyo_node hokuyo_node 
+ 1118  ls
+ 1119  cat start_turtlebot.sh 
+ 1120  vi start_turtlebot.sh 
+ 1121  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && turtlebot_node/src && python sensor_node.py " 
+ 1122  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && python sensor_node.py " 
+ 1123  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && turtlebot_node/src && python sensor_node.py " 
+ 1124  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd src && python sensor_node.py " 
+ 1125  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && python sensor_node.py " 
+ 1126  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && rosrun turtle_node sensor_node.py " 
+ 1127  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && rosrun turtle_node sensor_node.py " 
+ 1128  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && python sensor_node.py " 
+ 1129  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && rosrun turtle_node sensor_node.py " 
+ 1130  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd turtlebot_node/src && python sensor_node.py " 
+ 1131  ./start_turtlebot.sh 
+ 1132  ifconfig
+ 1133  sudo vim /etc/hosts
+ 1134  ls
+ 1135  ifconfig
+ 1136  cd
+ 1137  cd catkin_ws/src/turtlebot_node/
+ 1138  ./start_turtlebot.sh 
+ 1139  sudo find / -name keyboad_teleop.cpp
+ 1140  sudo find / -name keyboard_teleop.cpp
+ 1141  roslaunch turtlebot_teleop keyboard_teleop.launch
+ 1142  cd /opt/ros/indigo/share/turtlebot_teleop/_
+ 1143  vim  /opt/ros/indigo/share/turtlebot_teleop/
+ 1144  cd  /opt/ros/indigo/share/turtlebot_teleop/
+ 1145  ls
+ 1146  vim launch/
+ 1147  vim launch/ls -la
+ 1148  ls -la
+ 1149  roslaunch turtlebot_teleop keyboard_teleop.launch
+ 1150  cd
+ 1151  cd catkin_ws/src/turtlebot_node/
+ 1152  ./start_turtlebot.sh 
+ 1153  cd
+ 1154  sudo vim /etc/hosts
+ 1155  ifconfig
+ 1156  cd catkin_ws
+ 1157  ./start_ros.sh 
+ 1158  catkin_make install 
+ 1159  ./start_ros.sh 
+ 1160  catkin_make install 
+ 1161  ./start_ros.sh 
+ 1162  catkin_make install 
+ 1163  ./start_ros.sh 
+ 1164  catkin_make install 
+ 1165  ./start_ros.sh 
+ 1166  catkin_make install 
+ 1167  ./start_ros.sh 
+ 1168  catkin_make install 
+ 1169  ./start_ros.sh 
+ 1170  catkin_make install 
+ 1171  ./start_ros.sh 
+ 1172  catkin_make install 
+ 1173  ./start_ros.sh 
+ 1174  catkin_make install 
+ 1175  ./start_ros.sh 
+ 1176  catkin_make install 
+ 1177  ./start_ros.sh 
+ 1178  catkin_make install 
+ 1179  ./start_ros.sh 
+ 1180  catkin_make install 
+ 1181  ./start_ros.sh 
+ 1182  catkin_make install 
+ 1183  ./start_ros.sh 
+ 1184  catkin_make install 
+ 1185  ./start_ros.sh 
+ 1186  cd
+ 1187  cd catkin_ws
+ 1188  ./start_ros.sh 
+ 1189  catkin_make install 
+ 1190  cd
+ 1191  cd catkin_ws
+ 1192  catkin_make install 
+ 1193  rscore
+ 1194  roscore
+ 1195  ping 8.8.8.8
+ 1196  ls /dev/ttycd
+ 1197  ls
+ 1198  cd  src/
+ 1199  ls
+ 1200  cd ..
+ 1201  cd src
+ 1202  ls
+ 1203  cd ..
+ 1204  cat start_turtlebot.sh 
+ 1205  sudo chmod a+rw /dev/ttyUSB0 
+ 1206  cd 
+ 1207  cd catkin_ws/
+ 1208  ./start_ros.sh 
+ 1209  catkin_make install 
+ 1210  rosrun turtlebot_node  base_node
+ 1211  ./start_ros.sh 
+ 1212  catkin_make install 
+ 1213  ./start_ros.sh 
+ 1214  catkin_make install 
+ 1215  ./start_ros.sh 
+ 1216  catkin_make install 
+ 1217  ./start_ros.sh 
+ 1218  catkin_make install 
+ 1219  ./start_ros.sh 
+ 1220  rosrun rviz rviz -d `rospack find hokuyo_node`/hokuyo_test.vcg
+ 1221  rosrun rviz rviz -d `rospack find hokuyo_node`/hokuyo_test
+ 1222  rosrun rviz rviz -d `rospack find hokuyo_node`/hokuyo_test.vcg
+ 1223  rosrun rviz rviz -d `rospack find hokuyo_node`/hokuyo_test
+ 1224  catkin_make install
+ 1225  ./start_ros.sh 
+ 1226  catkin_make install
+ 1227  ./start_ros.sh 
+ 1228  catkin_make install
+ 1229  catkin_make install 
+ 1230  ping 8.8.8.8
+ 1231  ./start_ros.sh 
+ 1232  cd ..
+ 1233  cd catkin_ws
+ 1234  catkin_make install 
+ 1235  cd catkin_ws
+ 1236  ./start_ros.sh 
+ 1237  ifconfig
+ 1238  vim /etc/host
+ 1239  vim /etc/hosts
+ 1240  sudo vim /etc/hosts
+ 1241  catkin_make install 
+ 1242  ./start_ros.sh 
+ 1243  catkin_make install 
+ 1244  ./start_ros.sh 
+ 1245  catkin_make install 
+ 1246  ./start_ros.sh 
+ 1247  catkin_make install 
+ 1248  ./start_ros.sh 
+ 1249  catkin_make install 
+ 1250  cd ..
+ 1251  cd catkin_ws
+ 1252  catkin_make install 
+ 1253  source  devel/setup.bash 
+ 1254  catkin_make install 
+ 1255  roslaunch turtlebot_teleop keyboard_teleop.launch
+ 1256  cd
+ 1257  cd catkin_ws
+ 1258  catkin_make install 
+ 1259  find / -name keyboad_teleop.py
+ 1260  sudo find / -name keyboad_teleop.py
+ 1261  cd
+ 1262  cd catkin_ws
+ 1263  catkin make install
+ 1264  catkin_make install
+ 1265  cd src/turtlebot_node/
+ 1266  ./start_turtlebot.sh 
+ 1267  cd
+ 1268  ifconfig
+ 1269  sudo vim /etc/hosts
+ 1270  cd
+ 1271  roslaunch turtlebot_bringup minimal.launch
+ 1272  cd
+ 1273  cd helloworld/
+ 1274  ls
+ 1275  cd turtlebot/
+ 1276  ls
+ 1277  python draw_a_square.py 
+ 1278  python goforward
+ 1279  python goforward.py
+ 1280  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1281  export TURTLEBOT_BASE=create && 
+ 1282  export TURTLEBOT_STACKS=circles &&
+ 1283  sudo chmod +777 /dev/ttyUSB0 && 
+ 1284  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1285  roslaunch turtlebot_bringup minimal.launch --screen" 
+ 1286  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1287  export TURTLEBOT_BASE=create && 
+ 1288  export TURTLEBOT_STACKS=circles &&
+ 1289  sudo chmod +777 /dev/ttyUSB0 && 
+ 1290  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1291  roslaunch turtlebot_bringup minimal.launch --screen" 
+ 1292  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1293  export TURTLEBOT_BASE=create && 
+ 1294  export TURTLEBOT_STACKS=circles &&
+ 1295  sudo chmod +777 /dev/ttyUSB0 && 
+ 1296  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1297  roslaunch turtlebot_bringup minimal.launch --screen" 
+ 1298  cd
+ 1299  cd helloworld/turtlebot/
+ 1300  ls
+ 1301  vim draw_a_square.py 
+ 1302  cd
+ 1303  cd catkin_ws
+ 1304  cd src/turtlebot_node/src/
+ 1305  ls
+ 1306  cd ..
+ 1307  ./start_turtlebot.sh 
+ 1308  cd
+ 1309  cd catkin_ws
+ 1310  catkin_make install 
+ 1311  ./start_ros.sh 
+ 1312  cd
+ 1313  cd catkin_ws
+ 1314  ./start_ros.sh 
+ 1315  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && rosrun svg_ros sensor_node -selection 0 "
+ 1316  ./start.sh 
+ 1317  clear
+ 1318  ./start.sh 
+ 1319  roscore
+ 1320  cd catkin_ws
+ 1321  ./start_ros.sh 
+ 1322  cd
+ 1323  cd catkin_ws
+ 1324  catkin_make install
+ 1325  cd
+ 1326  mkdir ~/helloworld
+ 1327  cd ~/helloworld/
+ 1328  git clone https://github.com/markwsilliman/turtlebot/
+ 1329  cd turtlebot/
+ 1330  python goforward.py 
+ 1331  cd
+ 1332  cd catkin_ws
+ 1333  catkin_make install
+ 1334  cd src/turtlebot_node/
+ 1335  ls
+ 1336  ./start_turtlebot.sh 
+ 1337  cd 
+ 1338  cd helloworld/turtlebot/
+ 1339  python goforward
+ 1340  python goforward.py 
+ 1341  python draw_a_square.py 
+ 1342  history >> historia
+ 1343  vim historia 
+ 1344  vim  draw_a_square.py 
+ 1345  python draw_a_square.py 
+ 1346  vim  draw_a_square.py 
+ 1347  python draw_a_square.py 
+ 1348  vim  draw_a_square.py 
+ 1349  python draw_a_square.py 
+ 1350  cd
+ 1351  cd catkin_ws
+ 1352  catkin_make install
+ 1353  ifconfig
+ 1354  sudo vim /etc/hosts
+ 1355  ./start_ros.sh 
+ 1356  cd
+ 1357  cd helloworld/turtlebot/
+ 1358  ls
+ 1359  vim draw_a_square.py 
+ 1360  python draw_a_square.py 
+ 1361  jobs
+ 1362  kill -9 1
+ 1363  sudo kill -9 1
+ 1364  jobs
+ 1365  sudo kill -9 %1
+ 1366  sudo kill -9 1
+ 1367  sudo kill -9 +1
+ 1368  sudo kill -9 %1
+ 1369  sudo kill -9 
+ 1370  ls
+ 1371  jobs
+ 1372  sudo kill -9 1
+ 1373  jobs
+ 1374  python draw_a_square.py 
+ 1375  jobs
+ 1376  ps -aux
+ 1377  ps -aux | grep python
+ 1378  sudo kill -9 45054
+ 1379  sudo kill -9 44589
+ 1380  jobs
+ 1381  man jobs
+ 1382  man kill
+ 1383  python draw_a_square.py 
+ 1384  cd
+ 1385  cd catkin_ws/src/turtlebot_node/
+ 1386  ls
+ 1387  cd src/
+ 1388  ls
+ 1389  rosrun mv_turtle.py
+ 1390  chmod +x mv_turtle.py 
+ 1391  rosrun mv_turtle.py
+ 1392  cd
+ 1393  cd catkin_ws
+ 1394  catkin_make install
+ 1395  cd src/turtlebot_node/
+ 1396  rosrun svg_ros mv_turtle.py
+ 1397  python src/mv_turtle.py 
+ 1398  cd ..
+ 1399  cd svg_ros/
+ 1400  cd src/GUI/
+ 1401  chmod +x mv_turtle.py 
+ 1402  python mv_turtle.py 
+ 1403  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros GUI_ROS.py"
+ 1404  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros mv_turtle.py"
+ 1405  pwd
+ 1406  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros mv_turtle.py"
+ 1407  cd
+ 1408  cd catkin_ws
+ 1409  catkin_make install 
+ 1410  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros mv_turtle.py"
+ 1411  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1412   roscd svg_ros/src/ROSutilities/ && python sensor_node.py " &
+ 1413  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1414  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1415   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1416  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1417   rosrun svg_ros sensor_node -selection 0 "
+ 1418  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1419   rosrun svg_ros sensor_node -selection 1 "
+ 1420  lsb_release -a
+ 1421  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1422   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1423  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1424   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1425  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1426   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1427  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1428   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1429  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1430   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1431  ls /dev
+ 1432  sudo chmod a+rw /dev/ttyACM0 
+ 1433  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1434   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1435  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1436   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1437  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1438   rosrun turtlebot_node turtlebot_node " 
+ 1439  echo "MD0044072500001\n" >> /dev/ttyACM0
+ 1440  echo "MD0044072500001\n" > /dev/ttyACM0
+ 1441  echo "SCIP2.0\n" > /dev/ttyACM0
+ 1442  echo "SCIP2.0" > /dev/ttyACM0
+ 1443  echo "BM" > /dev/ttyACM0
+ 1444  echo "MD0044072500001" > /dev/ttyACM0
+ 1445  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1446   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1447  ./start.sh 
+ 1448  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1449   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1450  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1451   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1452  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1453   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1454  ls /dev/
+ 1455  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1456   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1457  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1458   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1459  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1460   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1461  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1462   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1463  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1464   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1465  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1466   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1467  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1468   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1469  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1470   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1471  chmod +xwr /dev/ttyACM0 
+ 1472  sudo chmod +xwr /dev/ttyACM0 
+ 1473  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1474   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1475  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1476   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1477  ls /dev/
+ 1478  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1479   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1480  python
+ 1481  ls
+ 1482  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1483   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1484  catkin_make install 
+ 1485  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1486   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1487  catkin_make install 
+ 1488  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1489   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1490  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1491   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1492  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1493   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1494  catkin_make install
+ 1495  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1496   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1497  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1498   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1499  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1500   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1501  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1502   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1503  catkin_make install
+ 1504  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1505   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1506  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1507   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1508  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1509   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1510  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1511   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1512  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1513   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1514  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1515   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1516  catkin_make install 
+ 1517  ./start
+ 1518  ./start.sh 
+ 1519  catkin_make install 
+ 1520  ./start.sh 
+ 1521  ls /dev
+ 1522  ./start.sh 
+ 1523  catkin_make install 
+ 1524  ./start.sh 
+ 1525  catkin_make install 
+ 1526  ./start.sh 
+ 1527  catkin_make install 
+ 1528  ./start.sh 
+ 1529  catkin_make install 
+ 1530  ./start.sh 
+ 1531  catkin_make install 
+ 1532  ./start.sh 
+ 1533  catkin_make install 
+ 1534  ./start.sh 
+ 1535  cd src/turtlebot_node/
+ 1536  ./start_turtlebot.sh 
+ 1537  ls /dev/
+ 1538  ./start_turtlebot.sh 
+ 1539  ls
+ 1540  ls /dev
+ 1541  ./start_turtlebot.sh 
+ 1542  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1543  export TURTLEBOT_BASE=create && 
+ 1544  export TURTLEBOT_STACKS=circles &&
+ 1545  sudo chmod +777 /dev/ttyUSB0 && 
+ 1546  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1547  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1548  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1549  export TURTLEBOT_BASE=create && 
+ 1550  export TURTLEBOT_STACKS=circles &&
+ 1551  sudo chmod +777 /dev/ttyUSB0 && 
+ 1552  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1553  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1554  ls /dev/
+ 1555  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1556  export TURTLEBOT_BASE=create && 
+ 1557  export TURTLEBOT_STACKS=circles &&
+ 1558  sudo chmod +777 /dev/ttyUSB0 && 
+ 1559  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1560  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1561  cd
+ 1562  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1563  export TURTLEBOT_BASE=create && 
+ 1564  export TURTLEBOT_STACKS=circles &&
+ 1565  sudo chmod +777 /dev/ttyUSB0 && 
+ 1566  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1567  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1568  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1569  export TURTLEBOT_BASE=create && 
+ 1570  export TURTLEBOT_STACKS=circles &&
+ 1571  sudo chmod +777 /dev/ttyUSB0 && 
+ 1572  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1573  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1574  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1575  export TURTLEBOT_BASE=create && 
+ 1576  export TURTLEBOT_STACKS=circles &&
+ 1577  sudo chmod +777 /dev/ttyUSB0 && 
+ 1578  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1579  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1580  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1581  export TURTLEBOT_BASE=create && 
+ 1582  export TURTLEBOT_STACKS=circles &&
+ 1583  sudo chmod +777 /dev/ttyUSB0 && 
+ 1584  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1585  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1586  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1587  export TURTLEBOT_BASE=create && 
+ 1588  export TURTLEBOT_STACKS=circles &&
+ 1589  sudo chmod +777 /dev/ttyUSB0 && 
+ 1590  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1591  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1592  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros inputs"
+ 1593  cd 
+ 1594  cd catkin_ws
+ 1595  ./start.sh
+ 1596  sudo chmod +x start.h
+ 1597  sudo chmod +x start.sh
+ 1598  ./start.sh
+ 1599  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1600  export TURTLEBOT_BASE=create && 
+ 1601  export TURTLEBOT_STACKS=circles &&
+ 1602  sudo chmod +777 /dev/ttyUSB0 && 
+ 1603  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1604  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1605  ls /dev
+ 1606  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1607  export TURTLEBOT_BASE=create && 
+ 1608  export TURTLEBOT_STACKS=circles &&
+ 1609  sudo chmod +777 /dev/ttyUSB0 && 
+ 1610  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1611  roslaunch turtlebot_bringup minimal.launch --screen"
+ 1612  ./start.sh
+ 1613  ls /dev
+ 1614  ./start.sh
+ 1615  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros inputs"
+ 1616  ./start.sh
+ 1617  cd /dev/
+ 1618  cat ttyACM0 
+ 1619  cat ttyACM0  
+ 1620  cat ttyACM0 
+ 1621  cd 
+ 1622  cd catkin_ws
+ 1623  ./start
+ 1624  ./start.sh
+ 1625  catkin_make install
+ 1626  rossrv svg:ros
+ 1627  rossrv svg_ros
+ 1628  rossrv show
+ 1629  rossrv list
+ 1630  rossrv show svg_ros
+ 1631  rossrv show svg_ros/GetLaserServ
+ 1632  catkin_make instal
+ 1633  catkin_make install
+ 1634  ./start.sh
+ 1635  catkin_make install 
+ 1636  ./start.sh
+ 1637  catkin_make install 
+ 1638  ./start.sh
+ 1639  catkin_make install 
+ 1640  ./start.sh
+ 1641  man xterm
+ 1642  man xterm  - h -hold
+ 1643  ./start.sh
+ 1644  catkin_make install 
+ 1645  ./start.sh
+ 1646  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1647  export TURTLEBOT_BASE=create && 
+ 1648  export TURTLEBOT_STACKS=circles &&
+ 1649  sudo chmod +777 /dev/ttyUSB0 && 
+ 1650  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1651  roslaunch turtlebot_bringup minimal.launch --scree
+ 1652  "
+ 1653  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1654  export TURTLEBOT_BASE=create && 
+ 1655  export TURTLEBOT_STACKS=circles &&
+ 1656  sudo chmod +777 /dev/ttyUSB0 && 
+ 1657  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1658  roslaunch turtlebot_bringup minimal.launch --scree
+ 1659  "
+ 1660  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1661  export TURTLEBOT_BASE=create && 
+ 1662  export TURTLEBOT_STACKS=circles &&
+ 1663  sudo chmod +777 /dev/ttyUSB0 && 
+ 1664  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1665  roslaunch turtlebot_bringup minimal.launch --scree
+ 1666  "
+ 1667  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1668  export TURTLEBOT_BASE=create && 
+ 1669  export TURTLEBOT_STACKS=circles &&
+ 1670  sudo chmod +777 /dev/ttyUSB0 && 
+ 1671  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1672  roslaunch turtlebot_bringup minimal.launch --scree
+ 1673  "
+ 1674  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1675  export TURTLEBOT_BASE=create && 
+ 1676  export TURTLEBOT_STACKS=circles &&
+ 1677  sudo chmod +777 /dev/ttyUSB0 && 
+ 1678  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1679  roslaunch turtlebot_bringup minimal.launch --scree
+ 1680  "
+ 1681  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1682  export TURTLEBOT_BASE=create && 
+ 1683  export TURTLEBOT_STACKS=circles &&
+ 1684  sudo chmod +777 /dev/ttyUSB0 && 
+ 1685  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1686  roslaunch turtlebot_bringup minimal.launch --scree
+ 1687  "
+ 1688  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1689  export TURTLEBOT_BASE=create && 
+ 1690  export TURTLEBOT_STACKS=circles &&
+ 1691  sudo chmod +777 /dev/ttyUSB0 && 
+ 1692  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1693  roslaunch turtlebot_bringup minimal.launch --scree
+ 1694  "
+ 1695  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1696  export TURTLEBOT_BASE=create && 
+ 1697  export TURTLEBOT_STACKS=circles &&
+ 1698  sudo chmod +777 /dev/ttyUSB0 && 
+ 1699  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1700  roslaunch turtlebot_bringup minimal.launch --scree
+ 1701  "
+ 1702  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1703  export TURTLEBOT_BASE=create && 
+ 1704  export TURTLEBOT_STACKS=circles &&
+ 1705  sudo chmod +777 /dev/ttyUSB1 && 
+ 1706  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1707  roslaunch turtlebot_bringup minimal.launch --scree
+ 1708  "
+ 1709  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1710  export TURTLEBOT_BASE=create && 
+ 1711  export TURTLEBOT_STACKS=circles &&
+ 1712  sudo chmod +777 /dev/ttyUSB0 && 
+ 1713  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1714  roslaunch turtlebot_bringup minimal.launch --scree
+ 1715  "
+ 1716  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1717  export TURTLEBOT_BASE=create && 
+ 1718  export TURTLEBOT_STACKS=circles &&
+ 1719  sudo chmod +777 /dev/ttyUSB0 && 
+ 1720  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1721  roslaunch turtlebot_bringup minimal.launch --scree
+ 1722  "
+ 1723  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1724  export TURTLEBOT_BASE=create && 
+ 1725  export TURTLEBOT_STACKS=circles &&
+ 1726  sudo chmod +777 /dev/ttyUSB0 && 
+ 1727  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1728  roslaunch turtlebot_bringup minimal.launch --scree
+ 1729  "
+ 1730  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1731  export TURTLEBOT_BASE=create && 
+ 1732  export TURTLEBOT_STACKS=circles &&
+ 1733  sudo chmod +777 /dev/ttyUSB1 && 
+ 1734  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1735  roslaunch turtlebot_bringup minimal.launch --scree
+ 1736  "
+ 1737  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1738  export TURTLEBOT_BASE=create && 
+ 1739  export TURTLEBOT_STACKS=circles &&
+ 1740  sudo chmod +777 /dev/ttyUSB1 && 
+ 1741  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1742  roslaunch turtlebot_bringup minimal.launch --scree
+ 1743  "
+ 1744  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1745  export TURTLEBOT_BASE=create && 
+ 1746  export TURTLEBOT_STACKS=circles &&
+ 1747  sudo chmod +777 /dev/ttyUSB1 && 
+ 1748  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1749  roslaunch turtlebot_bringup minimal.launch --scree
+ 1750  "
+ 1751  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1752  export TURTLEBOT_BASE=create && 
+ 1753  export TURTLEBOT_STACKS=circles &&
+ 1754  sudo chmod +777 /dev/ttyUSB0 && 
+ 1755  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1756  roslaunch turtlebot_bringup minimal.launch --scree
+ 1757  "
+ 1758  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1759  export TURTLEBOT_BASE=create && 
+ 1760  export TURTLEBOT_STACKS=circles &&
+ 1761  sudo chmod +777 /dev/ttyUSB0 && 
+ 1762  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1763  roslaunch turtlebot_bringup minimal.launch --scree
+ 1764  "
+ 1765  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1766  export TURTLEBOT_BASE=create && 
+ 1767  export TURTLEBOT_STACKS=circles &&
+ 1768  sudo chmod +777 /dev/ttyUSB0 && 
+ 1769  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1770  roslaunch turtlebot_bringup minimal.launch --scree
+ 1771  "
+ 1772  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1773  export TURTLEBOT_BASE=create && 
+ 1774  export TURTLEBOT_STACKS=circles &&
+ 1775  sudo chmod +777 /dev/ttyUSB1 && 
+ 1776  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1777  roslaunch turtlebot_bringup minimal.launch --scree
+ 1778  "
+ 1779  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1780  export TURTLEBOT_BASE=create && 
+ 1781  export TURTLEBOT_STACKS=circles &&
+ 1782  sudo chmod +777 /dev/ttyUSB1 && 
+ 1783  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1784  roslaunch turtlebot_bringup minimal.launch --scree
+ 1785  "
+ 1786  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1787  export TURTLEBOT_BASE=create && 
+ 1788  export TURTLEBOT_STACKS=circles &&
+ 1789  sudo chmod +777 /dev/ttyUSB1 && 
+ 1790  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1791  roslaunch turtlebot_bringup minimal.launch --scree
+ 1792  "
+ 1793  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1794  export TURTLEBOT_BASE=create && 
+ 1795  export TURTLEBOT_STACKS=circles &&
+ 1796  sudo chmod +777 /dev/ttyUSB0 && 
+ 1797  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1798  roslaunch turtlebot_bringup minimal.launch --scree
+ 1799  "
+ 1800  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1801  export TURTLEBOT_BASE=create && 
+ 1802  export TURTLEBOT_STACKS=circles &&
+ 1803  sudo chmod +777 /dev/ttyUSB0 && 
+ 1804  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1805  roslaunch turtlebot_bringup minimal.launch --scree
+ 1806  "
+ 1807  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1808  export TURTLEBOT_BASE=create && 
+ 1809  export TURTLEBOT_STACKS=circles &&
+ 1810  sudo chmod +777 /dev/ttyUSB1 && 
+ 1811  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB1 &&
+ 1812  roslaunch turtlebot_bringup minimal.launch --scree
+ 1813  "
+ 1814  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1815  export TURTLEBOT_BASE=create && 
+ 1816  export TURTLEBOT_STACKS=circles &&
+ 1817  sudo chmod +777 /dev/ttyUSB0 && 
+ 1818  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1819  roslaunch turtlebot_bringup minimal.launch --scree
+ 1820  "
+ 1821  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1822  export TURTLEBOT_BASE=create && 
+ 1823  export TURTLEBOT_STACKS=circles &&
+ 1824  sudo chmod +777 /dev/ttyUSB0 && 
+ 1825  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1826  roslaunch turtlebot_bringup minimal.launch --scree
+ 1827  "
+ 1828  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && 
+ 1829  export TURTLEBOT_BASE=create && 
+ 1830  export TURTLEBOT_STACKS=circles &&
+ 1831  sudo chmod +777 /dev/ttyUSB0 && 
+ 1832  export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0 &&
+ 1833  roslaunch turtlebot_bringup minimal.launch --scree
+ 1834  "
+ 1835  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1836   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1837  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1838   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1839  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1840   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1841  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1842   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1843  ls /dev/
+ 1844  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1845   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1846  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1847   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1848  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1849   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1850  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1851   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1852  ls /dev
+ 1853  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1854   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1855  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1856   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1857  ls
+ 1858  ls /dev
+ 1859  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1860   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1861  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1862   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1863  chmod +xrw /dev/ttyUSB0 
+ 1864  sudo chmod +xrw /dev/ttyUSB0 
+ 1865  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1866   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1867  echo 'SCIP2.0\n' >> /dev/ttyUSB0 
+ 1868  sudo echo 'SCIP2.0\n' >> /dev/ttyUSB0 
+ 1869  sudo chmod +wrx /dev/ttyUSB0 
+ 1870  sudo echo 'SCIP2.0\n' >> /dev/ttyUSB0 
+ 1871  sudo echo "'SCIP2.0\n'" >> /dev/ttyUSB0 
+ 1872  sudo echo 'SCIP2.0\n' >> /dev/ttyUSB0 
+ 1873  sudo echo 'SCIP2.0\n' > /dev/ttyUSB0 
+ 1874  echo 'SCIP2.0\n' >> /dev/ttyUSB0 
+ 1875  sudo chmod +wrx /dev/ttyUSB0 
+ 1876  ls -la  /dev/ttyUSB0 
+ 1877  sudo chmod +777 /dev/ttyUSB0 
+ 1878  ls -la  /dev/ttyUSB0 
+ 1879  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1880   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1881  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1882   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1883  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1884   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1885  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1886   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1887  echo 'SCIP2.0\n' >> /dev/ttyUSB0 
+ 1888  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1889   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1890  ls /dev
+ 1891  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1892   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1893  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1894   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1895  ls /dev
+ 1896  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1897   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1898  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1899   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1900  ls /dev
+ 1901  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1902   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1903  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1904   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1905  12345
+ 1906  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1907   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1908  ls /dev
+ 1909  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1910   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1911  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1912   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1913  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1914   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1915  ls /dev
+ 1916  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1917   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1918  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1919   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1920  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1921   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1922  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1923   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1924  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1925   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1926  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1927   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1928  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1929   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1930  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1931   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1932  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1933   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1934  ls /dev
+ 1935  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1936   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1937  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1938   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1939  ls /dev
+ 1940  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1941   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1942  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1943   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1944  ls /dev
+ 1945  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1946   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1947  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1948   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1949  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1950   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1951  python src/svg_ros/src/GUI/aux.py 
+ 1952  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1953   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1954  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1955   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1956  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1957   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1958  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1959   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1960  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1961   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1962  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1963   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1964  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1965   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1966  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1967   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1968  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1969   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1970  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1971   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1972  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1973   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1974  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1975   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1976  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1977   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1978  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1979   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1980  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1981   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1982  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1983   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1984  sudo xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+ 1985   roscd svg_ros/src/ROSutilities/ && python sensor_node.py "
+ 1986  xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros mv_turtle.py"
+ 1987  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+roscd svg_ros/src/ROSutilities/ && sudo python sensor_node.py "
+ 1988  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+roscd svg_ros/src/ROSutilities/ && sudo python sensor_node.py "
+ 1989  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+roscd svg_ros/src/ROSutilities/ && sudo python sensor_node.py "
+ 1990  cd catkin_ws
+ 1991  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+roscd svg_ros/src/ROSutilities/ && sudo python sensor_node.py "
+ 1992  catkin_make install 
+ 1993  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+roscd svg_ros/src/ROSutilities/ && sudo python sensor_node.py "
+ 1994  xterm -hold -e ". ~/catkin_ws/devel/setup.bash &&
+roscd svg_ros/src/ROSutilities/ && sudo python sensor_node.py "
+ 1995  history
+ 1996  q
+ 1997  history  > hola

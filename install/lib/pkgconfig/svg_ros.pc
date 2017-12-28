@@ -1,0 +1,8 @@
+prefix=/home/diego/catkin_ws/install
+
+Name: svg_ros
+Description: Description of svg_ros
+Version: 0.0.0
+Cflags: -I/home/diego/catkin_ws/install/include
+Libs: -L/home/diego/catkin_ws/install/lib 
+Requires: message_runtime

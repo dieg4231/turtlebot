@@ -1,0 +1,7 @@
+string answer
+---
+string param
+float32 coord_x
+float32 coord_y
+float32 coord_ang
+int32 flgGUI

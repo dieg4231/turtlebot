@@ -1,0 +1,7 @@
+string param
+int32 num_sensors
+float32 range
+float32 init_angle
+---
+string answer
+float32[700] sensors

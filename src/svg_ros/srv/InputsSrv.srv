@@ -1,0 +1,20 @@
+float64 origin_x
+float64 origin_y
+float64 origin_angRob
+float64 dest_x
+float64 dest_y
+string sensorBool
+int32 num_sensorsInt
+float64 angle_sensor_orig
+float64 range_angleRob
+float64 radiusRob
+float64 advance
+float64 max_angle
+int32 num_steps
+int32 select
+float64 largest_sensor
+string pathNAme
+string fileNAme
+int32 flg_noise
+---
+int32 success

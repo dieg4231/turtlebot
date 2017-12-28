@@ -1,0 +1,29 @@
+s3
+Tomar el cubo c
+s5
+Poner el cubo sobre la pila 
+s4
+Tomar el cubo f
+Ponerlo en el suelo
+Tomar el cubo e
+Ponerlo en el suelo
+Tomar el cubo  d
+s5
+Poner el cubo sobre la pila
+s3
+Tomar el cubo  b
+s5
+Poner el cubo sobre la pila 
+s4
+Tomar el cubo f
+s4
+Poner el cubo sobre la pila
+s4
+Tomar el cubo e
+s4
+Poner el cubo sobre la pila
+Ve a la pila s3
+Toma el cubo  a
+Ve a la pila s4
+Pon el cubo sobre la pila 
+Farea terminada.

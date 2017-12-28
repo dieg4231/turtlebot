@@ -1,0 +1,1000 @@
+  537  catkin_make install 
+  538  ./start_ros.sh 
+  539  catkin_make install 
+  540  ./start_ros.sh 
+  541  catkin_make install 
+  542  ./start_ros.sh 
+  543  catkin_make install 
+  544  ./start_ros.sh 
+  545  catkin_make install 
+  546  ./start_ros.sh 
+  547  catkin_make install 
+  548  ./start_ros.sh 
+  549  catkin_make install 
+  550  ./start_ros.sh 
+  551  catkin_make install 
+  552  ./start_ros.sh 
+  553  catkin_make install 
+  554  ./start_ros.sh 
+  555  catkin_make install 
+  556  ./start_ros.sh 
+  557  catkin_make install 
+  558  ./start_ros.sh 
+  559  catkin_make install 
+  560  ./start_ros.sh 
+  561  catkin_make install 
+  562  ./start_ros.sh 
+  563  catkin_make install 
+  564  ./start_ros.sh 
+  565  catkin_make install 
+  566  ./start_ros.sh 
+  567  catkin_make install 
+  568  ./start_ros.sh 
+  569  catkin_make install 
+  570  ./start_ros.sh 
+  571  catkin_make install 
+  572  ./start_ros.sh 
+  573  catkin_make install 
+  574  ./start_ros.sh 
+  575  catkin_make install 
+  576  ./start_ros.sh 
+  577  catkin_make install 
+  578  ./start_ros.sh 
+  579  catkin_make install 
+  580  ./start_ros.sh 
+  581  catkin_make install 
+  582  ./start_ros.sh 
+  583  catkin_make install 
+  584  ./start_ros.sh 
+  585  catkin_make install 
+  586  ./start_ros.sh 
+  587  catkin_make install 
+  588  ./start_ros.sh 
+  589  catkin_make install 
+  590  ./start_ros.sh 
+  591  catkin_make install 
+  592  ./start_ros.sh 
+  593  catkin_make install 
+  594  ./start_ros.sh 
+  595  catkin_make install 
+  596  ./start_ros.sh 
+  597  catkin_make install 
+  598  ./start_ros.sh 
+  599  catkin_make install 
+  600  ./start_ros.sh 
+  601  catkin_make install 
+  602  ./start_ros.sh 
+  603  catkin_make install 
+  604  ./start_ros.sh 
+  605  catkin_make install 
+  606  ./start_ros.sh 
+  607  catkin_make install 
+  608  ./start_ros.sh 
+  609  roscore
+  610  cd catkin_ws/
+  611  ./start_ros.sh 
+  612  catkin_make install 
+  613  ./start_ros.sh 
+  614  catkin_make install 
+  615  ./start_ros.sh 
+  616  catkin_make install 
+  617  ./start_ros.sh 
+  618  catkin_make install 
+  619  ./start_ros.sh 
+  620  history 
+  621  sudo apt-get install php7.0-dev
+  622  sudo apt-get remove php7.0-dev
+  623  sudo apt-get -y install php7.0 libapache2-mod-php7.0
+  624  sudo apt-get -y remove  php7.0 libapache2-mod-php7.0
+  625  sudo apt-get remove apache2
+  626  sudo apt-get install apache2
+  627  sudo apt-get install php5
+  628  sudo apt-get install libapache2-mod-php5
+  629  sudo /etc/init.d/apache2 restart
+  630  sudo apt-get install php5-dev
+  631  git
+  632  sudo apt-get install apache2adfa
+  633  cd
+  634  sudo apt-get install apache2
+  635  sudo apt-get install php5
+  636  sudo apt-get install libapache2-mod-php5
+  637  sudo /etc/init.d/apache2 restart
+  638  cd /var/www/
+  639  ls
+  640  cd html/
+  641  ls
+  642  mkdir  mascotas
+  643  sudo mkdir  mascotas
+  644  cd mascotas/
+  645  vim index.php
+  646  sudo vim index.php
+  647  cd
+  648  git clone https://github.com/guitarpoet/php-clips.git
+  649  cd php-clips/
+  650  ls
+  651  phpize
+  652  sudo apt-get install php5-dev
+  653  cd php-clips/
+  654  phpize
+  655  ./configure
+  656  make && make install
+  657  ./configure
+  658  make && make install
+  659  sudo make && make install
+  660  cd
+  661  sudo apt-get install php7.0
+  662  sudo apt-get install php7
+  663  sudo apt-get remove  php5-dev
+  664  sudo apt-get remove  libapache2-mod-php5
+  665  sudo /etc/init.d/apache2 stop
+  666  sudo apt-get remove  libapache2-mod-php5
+  667  sudo apt-get remove php5
+  668  sudo /etc/init.d/apache2 start
+  669  sudo apt-get inad  apache2
+  670  sudo /etc/init.d/apache2 stop
+  671  sudo apt-get remove  apache2
+  672  sudo /etc/init.d/apache2 start
+  673  sudo apt-get -y install apache2
+  674  sudo apt-get -y install php7.0 libapache2-mod-php7.0
+  675  sudo apt-get -y install php7.0 
+  676  sudo apt-get  install php7.0 
+  677  sudo add-apt-repository ppa:ondrej/php
+  678  sudo apt-get update
+  679  sudo apt-get -y install php7.0 libapache2-mod-php7.0
+  680  sudo /etc/init.d/apache2 start
+  681  cd php-clips/
+  682  phpize
+  683  sudo apt-get install php7.0-dev
+  684  phpize
+  685  ./configure
+  686  make && make install
+  687  sudo make && make install
+  688  sudo phpize
+  689  sudo ./configure
+  690  sudo make && make install
+  691  su 
+  692  sudo passwd
+  693  su
+  694  sudo /etc/init.d/apache2 restart
+  695  cd
+  696  cd php-clips/
+  697  ls
+  698  cd tests/
+  699  ls
+  700  cd ..
+  701  cp php /var/www/html/
+  702  cp -r  php /var/www/html/
+  703  sudo cp -r  php /var/www/html/
+  704  sudo cp -r  test  /var/www/html/
+  705  sudo cp -r  tests  /var/www/html/
+  706  sudo /etc/init.d/apache2 restart
+  707  cd ..
+  708  sudo cp -r  php-clips  /var/www/html/
+  709  cd /var/www/html/php-clips/
+  710  phpize
+  711  su
+  712  cd
+  713  cd Downloads/
+  714  ls
+  715  su
+  716  sudo /etc/init.d/apache2 stop
+  717  cd php-clips/history
+  718  history
+  719  cd clips-0.5.1/
+  720  ./configure
+  721  su
+  722  cd
+  723  su
+  724  ls
+  725  cd catkin_ws/
+  726  ./start_ros.sh 
+  727  catkin_make install
+  728  ./start_ros.sh 
+  729  catkin_make install
+  730  ./start_ros.sh 
+  731  catkin_make install
+  732  ./start_ros.sh 
+  733  catkin_make install
+  734  ./start_ros.sh 
+  735  catkin_make install
+  736  ./start_ros.sh 
+  737  catkin_make install
+  738  ./start_ros.sh 
+  739  catkin_make install
+  740  ./start_ros.sh 
+  741  catkin_make install
+  742  ./start_ros.sh 
+  743  catkin_make install
+  744  ./start_ros.sh 
+  745  catkin_make install
+  746  ./start_ros.sh 
+  747  catkin_make install
+  748  ./start_ros.sh 
+  749  catkin_make install
+  750  ./start_ros.sh 
+  751  catkin_make install
+  752  ./start_ros.sh 
+  753  catkin_make install
+  754  ./start_ros.sh 
+  755  catkin_make install
+  756  ./start_ros.sh 
+  757  catkin_make install
+  758  ./start_ros.sh 
+  759  catkin_make install
+  760  ./start_ros.sh 
+  761  catkin_make install
+  762  ./start_ros.sh 
+  763  catkin_make install
+  764  ./start_ros.sh 
+  765  catkin_make install
+  766  ./start_ros.sh 
+  767  catkin_make install
+  768  ./start_ros.sh 
+  769  catkin_make install
+  770  ./start_ros.sh 
+  771  catkin_make install
+  772  ./start_ros.sh 
+  773  catkin_make install
+  774  ./start_ros.sh 
+  775  catkin_make install
+  776  ./start_ros.sh 
+  777  catkin_make install
+  778  ./start_ros.sh 
+  779  catkin_make install
+  780  ./start_ros.sh 
+  781  catkin_make install
+  782  ./start_ros.sh 
+  783  catkin_make install
+  784  ./start_ros.sh 
+  785  catkin_make install
+  786  ./start_ros.sh 
+  787  catkin_make install
+  788  ./start_ros.sh 
+  789  catkin_make install
+  790  ./start_ros.sh 
+  791  catkin_make install
+  792  ./start_ros.sh 
+  793  clear
+  794  pwd
+  795  cd
+  796  ls
+  797  cd 
+  798  ls
+  799  cd Downloads/
+  800  ls
+  801  vim uno
+  802  ls
+  803  clips
+  804  clips -f car
+  805  ls
+  806  vi car
+  807  clips -f car
+  808  clips -f buy 
+  809  clips -f car
+  810  clips -f buy
+  811  clips -f car
+  812  cd /var/www/html/
+  813  ls
+  814  clips -f uno
+  815  cp uno dos
+  816  vim dos
+  817  clips -f dos
+  818  ls
+  819  sudo service apache2 start
+  820  clips -f dos
+  821  clips -f uno
+  822  cd caninos/
+  823  clips -f uno
+  824  clips -f uno >> aux
+  825  cat aux
+  826  clips -f uno >> aux
+  827  clips -f uno > aux
+  828  ping 8.8.8.8
+  829  vim  /etc/php5/apache2/php.ini 
+  830  sudo vim  /etc/php5/apache2/php.ini 
+  831  service apache2 restart
+  832  service apache2 stop
+  833  service apache2 start
+  834  sudo vim  /etc/php/apache2/php.ini 
+  835  service apache2 stop
+  836  sudo /etc/init.d/apache2  stop
+  837  sudo /etc/init.d/apache2  start
+  838  clips -f uno > aux
+  839  php expertitu.php 
+  840  echo ''
+  841  clips -f uno > aux; echo ''
+  842  sudo vim  /etc/php5/apache2/php.ini 
+  843  php expertitu.php 
+  844  php expertitu.php
+  845  clips -f uno  2>&1 | tee aux 2> /dev/null > /dev/null &
+  846  cd ..
+  847  ls
+  848  find / -name aux
+  849  chmod 777 caninos
+  850  clips -f uno 
+  851  cd caninos/
+  852  clips -f uno 
+  853  roscore
+  854  cd /var/www/html/caninos/
+  855  clips -f uno
+  856  touch prueba
+  857  vim prueba
+  858  echo adios >> prueba
+  859  cat prueba
+  860  clips -f uno
+  861  php expertitu.php 
+  862  service apache2 stop
+  863  service apache2 start
+  864  sudo /etc/init.d/apache2  stop
+  865  sudo /etc/init.d/apache2  restart
+  866  clips -f uno
+  867  sudo /etc/init.d/apache2  restart
+  868  clips -f uno
+  869  sudo /etc/init.d/apache2  restart
+  870  clips -f uno
+  871  sudo /etc/init.d/apache2  restart
+  872  clips -f uno
+  873  sudo /etc/init.d/apache2  restart
+  874  clips -f uno
+  875  sudo /etc/init.d/apache2  restart
+  876  ipconfig
+  877  ifconfig
+  878  sudo /etc/init.d/apache2  restart
+  879  clips -f uno
+  880  sudo /etc/init.d/apache2  restart
+  881  clips -f uno
+  882  sudo /etc/init.d/apache2  restart
+  883  clips -f uno
+  884  cd
+  885  cd Downloads/
+  886  ls
+  887  clips -f uno
+  888  ls
+  889  clips -f  experto.clip 
+  890  vim uno
+  891  clips -f uno
+  892  vim uno
+  893  clips -f uno
+  894  vim uno
+  895  clips -f uno
+  896  clips -f uno_
+  897  clips -f uno
+  898  clips -f uno_
+  899  clear
+  900  clips -f uno_
+  901  clips -f uno_ > ggg
+  902  vi ggg
+  903  clips -f uno_ > ggg
+  904  clips -f uno_
+  905  ifconfig
+  906  history
+  907  sudo /etc/init.d/apache2 restart
+  908  ifconfig
+  909  cd /var/www/html/caninos/
+  910  clips -f uno_full
+  911  cd /var/www/html/
+  912  cd caninos/
+  913  clips -f uno_full
+  914  history
+  915  sudo /etc/init.d/apache2  restart
+  916  sudo /etc/init.d/apache2  stop
+  917  sudo /etc/init.d/apache2  start
+  918  sudo /etc/init.d/apache2  restart
+  919  clips -f uno
+  920  clips -f uno_full_
+  921  sudo /etc/init.d/apache2  restart
+  922  clips -f uno
+  923  sudo /etc/init.d/apache2  restart
+  924  clips -f uno
+  925  sudo /etc/init.d/apache2  restart
+  926  clips -f uno
+  927  sudo /etc/init.d/apache2  restart
+  928  ipconfig
+  929  ifconfig
+  930  cd /var/www/html/caninos/
+  931  clips -f uno
+  932  sudo /etc/init.d/apache2  restart
+  933  ifconfig
+  934  clips -f uno
+  935  sudo /etc/init.d/apache2  restart
+  936  cd
+  937  cd Downloads/
+  938  clips -f uno_
+  939  roscore
+  940  cd catkin_ws/
+  941  ls
+  942  ./start_ros.sh 
+  943  catkin_make install 
+  944  ./start_ros.sh 
+  945  cd
+  946  clips -f cubos.c 
+  947  clear
+  948  clips -f cubos.c 
+  949  clips -f suboc.c
+  950  pwd
+  951  ls
+  952  clips -f sobuc.c
+  953  clips -f cubos.c 
+  954  clips -f sobuc.c
+  955  sudo apt-get install mplayer
+  956  mplayer -ao alsa -really-quiet -noconsolecontrols “http://translate.google.com/translate_tts?tl=es&q=Hola, soy una Raspberry Pi que habla. Gracias por visitar efe pAez punto com”
+  957  mplayer -ao alsa -really-quiet -noconsolecontrols “http://translate.google.com/translate_tts?tl=es&q=Hola soy una Raspberry Pi que habla. Gracias por visitar efe pAez punto com”
+  958  mplayer -ao alsa -really-quiet -noconsolecontrols “http://translate.google.com/translate_tts?tl=es&q=Hola”
+  959  cd
+  960  ls
+  961  sudo find / -name mplayer
+  962  sudo apt-get install cmus
+  963  cmus
+  964  mpg123
+  965  sudo apt-get install mpg321
+  966  cd Downloads/
+  967  mpg123 mty.mp3 
+  968  clips -f cubos.c 
+  969  cd
+  970  clips -f cubos.c 
+  971  clips -f sobuc.c 
+  972  pwd
+  973  cd catkin_ws/
+  974  catkin_make install 
+  975  ./start_ros.sh 
+  976  cd
+  977  clips -f sobuc.c 
+  978  cd catkin_ws/
+  979  catkin_make install 
+  980  ./start_ros.sh 
+  981  catkin_make install 
+  982  ./start_ros.sh 
+  983  catkin_make install 
+  984  cd src/svg_ros/
+  985  ls
+  986  cd src
+  987  ls
+  988  chmod 777 utilities/
+  989  ls
+  990  cd utilities/
+  991  l
+  992  cd
+  993  cd catkin_ws/
+  994  catkin_make install 
+  995  ./start_ros.sh 
+  996  catkin_make install 
+  997  ./start_ros.sh 
+  998  cd src/svg_ros/src
+  999  cd utilities/
+ 1000  clips -f  cubos.c 
+ 1001  ls
+ 1002  ls -la
+ 1003  chmod 777 cubos.c 
+ 1004  ls -la
+ 1005  clips -f  cubos.c 
+ 1006  cd
+ 1007  cd catkin_ws/
+ 1008  catkin_make install 
+ 1009  ./start_ros.sh 
+ 1010  catkin_make install 
+ 1011  ./start_ros.sh 
+ 1012  catkin_make install 
+ 1013  ./start_ros.sh 
+ 1014  catkin_make install 
+ 1015  ./start_ros.sh 
+ 1016  catkin_make install 
+ 1017  ./start_ros.sh 
+ 1018  catkin_make install 
+ 1019  ./start_ros.sh 
+ 1020  catkin_make install 
+ 1021  ./start_ros.sh 
+ 1022  catkin_make install 
+ 1023  ./start_ros.sh 
+ 1024  catkin_make install 
+ 1025  ./start_ros.sh 
+ 1026  catkin_make install 
+ 1027  ./start_ros.sh 
+ 1028  catkin_make install 
+ 1029  ./start_ros.sh 
+ 1030  catkin_make install 
+ 1031  ./start_ros.sh 
+ 1032  cd
+ 1033  clips -f cubos.c 
+ 1034  cd catkin_ws/
+ 1035  catkin_make install 
+ 1036  ./start_ros.sh 
+ 1037  catkin_make install 
+ 1038  ./start_ros.sh 
+ 1039  catkin_make install 
+ 1040  ./start_ros.sh 
+ 1041  cd
+ 1042  clips -f sobuc.c 
+ 1043  cd catkin_ws/
+ 1044  catkin_make install 
+ 1045  ./start_ros.sh 
+ 1046  catkin_make install 
+ 1047  ./start_ros.sh 
+ 1048  catkin_make install 
+ 1049  ./start_ros.sh 
+ 1050  catkin_make install 
+ 1051  ./start_ros.sh 
+ 1052  catkin_make install 
+ 1053  ./start_ros.sh 
+ 1054  catkin_make install 
+ 1055  ./start_ros.sh 
+ 1056  catkin_make install 
+ 1057  ./start_ros.sh 
+ 1058  catkin_make install 
+ 1059  ./start_ros.sh 
+ 1060  catkin_make install 
+ 1061  ./start_ros.sh 
+ 1062  catkin_make install 
+ 1063  ./start_ros.sh 
+ 1064  catkin_make install 
+ 1065  ./start_ros.sh 
+ 1066  catkin_make install 
+ 1067  ./start_ros.sh 
+ 1068  catkin_make install 
+ 1069  ./start_ros.sh 
+ 1070  catkin_make install 
+ 1071  ./start_ros.sh 
+ 1072  cd
+ 1073  clips -f sobuc.c 
+ 1074  cd catkin_ws/
+ 1075  clips -f sobuc.c 
+ 1076  ./start_ros.sh 
+ 1077  catkin_make install 
+ 1078  ./start_ros.sh 
+ 1079  catkin_make install 
+ 1080  ./start_ros.sh 
+ 1081  ifconfig
+ 1082  cd
+ 1083  ls
+ 1084  catkin_make install
+ 1085  cd
+ 1086  cd catkin_ws/
+ 1087  catkin_make install
+ 1088  export ROS_MASTER_URI=http://192.168.1.217
+ 1089  ping 192.168.1.217
+ 1090  export ROS_MASTER_URI=http://192.168.1.217
+ 1091  ifconfig
+ 1092  export ROS_HOSTNAME=192.168.1.193
+ 1093  rosservice list
+ 1094  export ROS_MASTER_URI=http://192.168.1.217:11311
+ 1095  rosservice list
+ 1096  sudo vi /etc/hosts
+ 1097  rosservice list
+ 1098  rosservice call /move_robot       
+ 1099  osservice call /move_robot        
+ 1100  rosservice call /move_robot          
+ 1101  catkin_make install 
+ 1102  . devel/setup.bash 
+ 1103  source devel/setup.bash 
+ 1104  rosservice call /move_robot 
+ 1105  cd ..
+ 1106  ls
+ 1107  cd catkin_ws/src/
+ 1108  ls
+ 1109  ifconfig
+ 1110  ping 192.168.1.217
+ 1111  catkin_make install 
+ 1112  cd..
+ 1113  catkin_make install 
+ 1114  cd ..
+ 1115  cd catkin_ws/
+ 1116  catkin_make install 
+ 1117  rosservice call /move_robot          
+ 1118  export ROS_MASTER_URI=http://192.168.1.217:11311
+ 1119  export ROS_HOSTNAME=192.168.1.146
+ 1120  rosservice call /move_robt
+ 1121  export ROS_MASTER_URI=http://192.168.1.217:11311
+ 1122  rosservice call /move_robt
+ 1123  rosservice call /move_robot     
+ 1124  rosservice call /move_robot      
+ 1125  rosservice list
+ 1126  rosservice call /move_robot     
+ 1127  sudo vi /etc/hosts
+ 1128  rosservice call /move_robot "param: 'mv .5 0 '
+ 1129  coord_x: 0.0
+ 1130  coord_y: 0.0
+ 1131  coord_ang: 0.0" 
+ 1132  rosservice call /move_robot "param: 'mv 0 3.14 '
+ 1133  coord_x: 0.0
+ 1134  coord_y: 0.0
+ 1135  coord_ang: 0.0" 
+ 1136  rosservice call /move_robot "param: 'mv 0 1 '
+ 1137  coord_x: 0.0
+ 1138  coord_y: 0.0
+ 1139  coord_ang: 0.0" 
+ 1140  rosservice call /move_robot "param: 'mv 0 3 '
+ 1141  coord_x: 0.0
+ 1142  coord_y: 0.0
+ 1143  coord_ang: 0.0" 
+ 1144  cdls 
+ 1145  ls
+ 1146  cd src/
+ 1147  ls
+ 1148  cd svg_ros/
+ 1149  ls
+ 1150  cd srv
+ 1151  ls
+ 1152  vi  InputsSrv.srv 
+ 1153  vi  SensorSrv.srv 
+ 1154  cd 
+ 1155  cd catkin_ws/
+ 1156  catkin_make install 
+ 1157  ./start_ros.sh 
+ 1158  rosservice call /move_robot "param: 'mv 0 3 '
+ 1159  coord_x: 0.0
+ 1160  coord_y: 0.0
+ 1161  coord_ang: 0.0" 
+ 1162  rosservice call /move_robot "param: 'mv 0 3 '
+ 1163  coord_x: 0.0
+ 1164  coord_y: 0.0
+ 1165  coord_ang: 0.0" 
+ 1166  rosservice call /move_robot "param: 'mv 0 3 '
+ 1167  coord_x: 0.0
+ 1168  coord_y: 0.0
+ 1169  coord_ang: 0.0" 
+ 1170  ifconfig
+ 1171  rosservice call /move_robot "param: 'mv 0 3 '
+ 1172  coord_x: 0.0
+ 1173  coord_y: 0.0
+ 1174  coord_ang: 0.0" 
+ 1175  rosservice call /move_robot "param: 'mv 0 3 '
+ 1176  coord_x: 0.0
+ 1177  coord_y: 0.0
+ 1178  coord_ang: 0.0" 
+ 1179  ./start_ros.sh 
+ 1180  rosservice call /move_robot "param: 'mv 0 3 '
+ 1181  coord_x: 0.0
+ 1182  coord_y: 0.0
+ 1183  coord_ang: 0.0" 
+ 1184  rosservice call /move_robot "param: 'mv 0 3 '
+ 1185  coord_x: 0.0
+ 1186  coord_y: 0.0
+ 1187  coord_ang: 0.0" 
+ 1188  rosservice call /move_robot "param: 'mv 0 3 '
+ 1189  coord_x: 0.0
+ 1190  coord_y: 0.0
+ 1191  coord_ang: 0.0" 
+ 1192  cd
+ 1193  cd catkin_ws/
+ 1194  ls
+ 1195  roscd svg_ros/
+ 1196  ls
+ 1197  cd src
+ 1198  ls
+ 1199  cd ROSutilities/
+ 1200  ls
+ 1201  vi base_node.cpp 
+ 1202  cd
+ 1203  cd catkin_ws/
+ 1204  catkin_make install
+ 1205  ./start_ros.sh 
+ 1206  rosservice call /move_robot "param: 'mv 0 3 '
+ 1207  coord_x: 0.0
+ 1208  coord_y: 0.0
+ 1209  coord_ang: 0.0" 
+ 1210  rosservice call /move_robot "param: 'mv 0 3 '
+ 1211  coord_x: 0.0
+ 1212  coord_y: 0.0
+ 1213  coord_ang: 0.0" 
+ 1214  ./start_ros.sh 
+ 1215  cd
+ 1216  history > historial
+ 1217  vi historial 
+ 1218  ./start_ros.sh 
+ 1219  cd catkin_ws/
+ 1220  cd ..
+ 1221  cp catkin_ws catkin_ws_back
+ 1222  cd -r catkin_ws/ catkin_ws_back
+ 1223  ./start_ros.sh 
+ 1224  cd ROSutilities/
+ 1225  cd catkin_ws/
+ 1226  ls
+ 1227  cd src/svg_ros/
+ 1228  ls
+ 1229  cd src
+ 1230  ls
+ 1231  cd ROSutilities/
+ 1232  ls
+ 1233  cat base_node.cpp 
+ 1234  vi base_node.cpp 
+ 1235  cd 
+ 1236  cd catkin_ws/
+ 1237  vi start_ros.sh 
+ 1238  catkin_make install 
+ 1239  ./start
+ 1240  ping 8.8.8.8
+ 1241  ./start_ros.sh 
+ 1242  export ROS_MASTER_URI=http://localhost:1131
+ 1243  ./start_ros.sh 
+ 1244  catkin_make install
+ 1245  ./start_ros.sh 
+ 1246  export ROS_MASTER_URI=http://localhost
+ 1247  export ROS_MASTER_URI=http://localhost:1131
+ 1248  catkin_make install
+ 1249  ./start_ros.sh 
+ 1250  ping localhost
+ 1251  export ROS_HOSTNAME=localhost
+ 1252  export ROS_MASTER_URI=http://localhost:11311
+ 1253  ./start_ros.sh 
+ 1254  catkin_make install
+ 1255  ./start_ros.sh 
+ 1256  cd 
+ 1257  cd Downloads/
+ 1258  ls
+ 1259  clips -f uno
+ 1260  ls
+ 1261  clips -f car
+ 1262  ls
+ 1263  clips -f ggg
+ 1264  cd
+ 1265  cd catkin_ws/
+ 1266  catkin_make install
+ 1267  ./start_ros.sh 
+ 1268  catkin_make install
+ 1269  ./start_ros.sh 
+ 1270  cd ..
+ 1271  clips -f cubos.c 
+ 1272  cd
+ 1273  cd catkin_ws/
+ 1274  ./start_ros.sh 
+ 1275  catkin_make install 
+ 1276  ./start_ros.sh 
+ 1277  cd
+ 1278  clips -f  sobuc.c 
+ 1279  roscore
+ 1280  ifconfig
+ 1281  roscore
+ 1282  cd catkin_ws/
+ 1283  ls
+ 1284  vi start_ros.sh 
+ 1285  sudo vi start_ros.sh 
+ 1286  cd src/svg_ros/src
+ 1287  ls
+ 1288  cd ROSutilities/
+ 1289  ls
+ 1290  vi base_node.cpp 
+ 1291  cd
+ 1292  cd catkin_ws/
+ 1293  catkin_make install 
+ 1294  export ROS_MASTER_URI=http://192.168.1.217:11311
+ 1295  ifconfig
+ 1296  export ROS_HOSTNAME=192.168.1.146
+ 1297  cd
+ 1298  cd catkin_ws/
+ 1299  ./start_ros.sh 
+ 1300  catkin_make install 
+ 1301  ./start_ros.sh 
+ 1302  rostopic  hz /turtle1/pose
+ 1303  rostopic type /turtle1/cmd_vel | rosmsg show
+ 1304  rosrun rqt_plot rqt_plot 
+ 1305  wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+ 1306  ls
+ 1307  sudo apt-get update
+ 1308  sudo apt-get install cf-cli
+ 1309  wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add - echo "deb http://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+ 1310  sudo apt-get update
+ 1311  wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add - echo "deb http://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+ 1312  sudo vim /etc/apt/sources.list.d/cloudfoundry-cli.list 
+ 1313  sudo apt-get update
+ 1314  wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key 
+ 1315  df -h
+ 1316  du -h
+ 1317  df -h
+ 1318  sudo lsscsi
+ 1319  sudo lsblk -fm
+ 1320  gparted
+ 1321  df -h
+ 1322  sudo vim /etc/apt/sources.list
+ 1323  sudo vim /etc/apt/sources.list.d/cloudfoundry-cli.list 
+ 1324  rosrun turtlesim turtle_node
+ 1325  rosrun turtlesim turtlesim_node
+ 1326  cd
+ 1327  cd catkin_ws/
+ 1328  ls
+ 1329  vim start_ros.sh 
+ 1330  roscd beginner_tutorials
+ 1331  roscd 
+ 1332  cd
+ 1333  cd catkin-
+ 1334  cd catkin-ws/
+ 1335  source devel/setup.bash
+ 1336  roscd beginner_tutorials/
+ 1337  mkdir launch
+ 1338  cd launch/
+ 1339  vim  turtlemimic.launch
+ 1340  roslaunch beginner_tutorials turtlemimic.launch 
+ 1341  rosnode list
+ 1342  rosrun turtlesim turtle_teleop_key 
+ 1343  rostopic 
+ 1344  rostopic echo
+ 1345  rostopic echo /turtle1/cmd_vel 
+ 1346  rostopic list -v
+ 1347  rostopic type  /turtle1/cmd_vel 
+ 1348  rosmsg show geometry_msgs/Twist
+ 1349  rostopic type  /turtle1/cmd_vel 
+ 1350  rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+ 1351  rosservice  list
+ 1352  rosservice type
+ 1353  rosservice type /clear 
+ 1354  rosservice call  /clear 
+ 1355  rosservice type /spawn  | rossrv show
+ 1356  rosservice type /spawn  2 2 .02 "vacio"
+ 1357  rosservicecall /spawn  2 2 .02 "vacio"
+ 1358  rosservice call /spawn  2 2 .02 "vacio"
+ 1359  rosservice call /spawn  3 2 .0 "vacio"
+ 1360  rosservice call /spawn  2 3 .0 "vacio"
+ 1361  rosservice call /spawn  0 0 .0 "vacio"
+ 1362  rosservice call /spawn  0 0 .0 ""
+ 1363  rosparam list
+ 1364  rosparam  set /background_r 150
+ 1365  rosservice call  /clear 
+ 1366  rosparam  get /background_r 
+ 1367  rosparam  set /background_r 15
+ 1368  rosservice call  /clear 
+ 1369  rosparam  set /background_g
+ 1370  rosparam  get /background_g
+ 1371  rosparam  get /
+ 1372  rosparam  get /roslaunch
+ 1373  rosparam  dump  params.yaml
+ 1374  ls
+ 1375  rosparam  set /background_r 150
+ 1376  rosservice call  /clear 
+ 1377  rosparam  set /background_r 0
+ 1378  rosservice call  /clear 
+ 1379  rosparam  set /background_r 10
+ 1380  rosservice call  /clear 
+ 1381  rosparam  set /background_b 10
+ 1382  rosservice call  /clear 
+ 1383  rosparam  load params.yaml
+ 1384  rosservice call  /clear 
+ 1385  rosrun rqt_console rqt_console
+ 1386  rosrun rqt_logger_level rqt_logger_level
+ 1387  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 -- '{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}'
+ 1388  rostopic pub /turtlesim1/turtle1/cmd_vel geometry_msgs/Twist -r 1 -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, -1.8]'
+ 1389  rosed roscpp Logger.msg 
+ 1390  echo $EDITOR
+ 1391  cd catkin-ws/
+ 1392  ls
+ 1393  cd devel/
+ 1394  ls
+ 1395  cd  ..
+ 1396  cd build/
+ 1397  ls
+ 1398  cd beginner_tutorials/
+ 1399  ls
+ 1400  mkdir msg
+ 1401  echo "int64 num" > msg/Num.msg
+ 1402  cat msg/Num.msg 
+ 1403  ls
+ 1404  ls CMakeFiles/
+ 1405  ls
+ 1406  cd ..
+ 1407  ls
+ 1408  cd ..
+ 1409  ls
+ 1410  find . -name package.xml
+ 1411  find . -name package.xml | cd
+ 1412  cd src/beginner_tutorials/
+ 1413  ls
+ 1414  vim package.xml 
+ 1415  cdls
+ 1416  ls
+ 1417  vim CMakeLists.txt 
+ 1418  rosmsg show beginner_tutorials/Num
+ 1419  cd
+ 1420  cd catkin-ws/src/
+ 1421  rosmsg show beginner_tutorials/Num
+ 1422  cd
+ 1423  rospack depends1 beginner_tutorials 
+ 1424  cd catkin-ws/
+ 1425  cd ls
+ 1426  ls
+ 1427  cd devel/
+ 1428  ls
+ 1429  cd ..
+ 1430  cd build/
+ 1431  ls
+ 1432  cd ..
+ 1433  cd src/
+ 1434  ls
+ 1435  cd ..
+ 1436  catkin_make install
+ 1437  catkin_make
+ 1438  cd build/
+ 1439  roslist
+ 1440  clear
+ 1441  roscd 
+ 1442  echo $ROS_PACKAGE_PATH 
+ 1443  cd
+ 1444  cd catkin
+ 1445  cd catkin-ws/
+ 1446  source devel/setup.bash 
+ 1447  roscd beginner_tutorials/
+ 1448  rosmsg show beginner_tutorials/Num
+ 1449  roscd beginner_tutorials/Num
+ 1450  ls
+ 1451  mkdir msg
+ 1452  echo "int64 num"> msg/Num.msg
+ 1453  ls
+ 1454  vim package.xml 
+ 1455  vim CMakeLists.txt 
+ 1456  rosmsg show beginner_tutorials/Num 
+ 1457  mkdir srv
+ 1458  roscp rospy_tutorials AddTwoInts.srv srv/AddTwoInts.srv
+ 1459  ls
+ 1460  rosls
+ 1461  rosls srv
+ 1462  cd sr
+ 1463  cd srv
+ 1464  ls
+ 1465  vim AddTwoInts.srv 
+ 1466  cd ..
+ 1467  vim package.xml 
+ 1468  cd srv
+ 1469  ls
+ 1470  cd ..
+ 1471  vim CMakeLists.txt 
+ 1472  rossrv show beginner_tutorials/AddTwoInts 
+ 1473  vim CMakeLists.txt 
+ 1474  cd ../..
+ 1475  catkin_make install 
+ 1476  rossrv show beginner_tutorials/AddTwoInts 
+ 1477  rossrv show AddTwoInts 
+ 1478  vim CMakeLists.txt 
+ 1479  cd src
+ 1480  ls
+ 1481  vim CMakeLists.txt 
+ 1482  vim CMakeLists.txt cd beginner_tutorials/
+ 1483  ls
+ 1484  cd beginner_tutorials/
+ 1485  ls
+ 1486  vim CMakeLists.txt 
+ 1487  d
+ 1488  vim CMakeLists.txt 
+ 1489  cd ../..
+ 1490  catkin_make install 
+ 1491  cd -
+ 1492  ls
+ 1493  cd src
+ 1494  ls
+ 1495  wget https://raw.githubusercontent.com/ros/ros_tutorials/kinetic-devel/roscpp_tutorials/talker/talker.cpp
+ 1496  ls
+ 1497  vim talker.cpp 
+ 1498  wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/roscpp_tutorials/listener/listener.cpp
+ 1499  ls
+ 1500  cd ..
+ 1501  vim CMakeLists.txt 
+ 1502  cd ../..
+ 1503  catkin_make
+ 1504  rosrun beginner_tutorials talker
+ 1505  ./start_ros.sh 
+ 1506  ls
+ 1507  cd devel/
+ 1508  ls
+ 1509  cd ..
+ 1510  cd build/
+ 1511  ls
+ 1512  cd ..
+ 1513  cd src/
+ 1514  ls
+ 1515  cd svg_ros/
+ 1516  ls
+ 1517  vim package.xml 
+ 1518  vim  CMakeLists.txt 
+ 1519  cd
+ 1520  cd catkin_ws/
+ 1521  ls
+ 1522  vim start_ros.sh 
+ 1523  catkin_make install 
+ 1524  ./start_ros.sh 
+ 1525  vim start_ros.sh 
+ 1526  ls
+ 1527  rosrun 
+ 1528  rosrun MVserver
+ 1529  rosrun svg_ros GUI_ROS.py
+ 1530  cd 
+ 1531  cd catkin_ws/
+ 1532  ls
+ 1533  source devel/setup.bash 
+ 1534  rosrun svg_ros MVServ.srv 
+ 1535  history
+ 1536  history > ppp

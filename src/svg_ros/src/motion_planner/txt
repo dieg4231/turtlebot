@@ -1,0 +1,1 @@
+xterm -hold -e ". ~/catkin_ws/devel/setup.bash && roscd svg_ros/src/data/ && rosrun svg_ros motion_planner_ROS"

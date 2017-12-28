@@ -1,0 +1,2 @@
+svg_ros:turtlebot_node
+-DCATKIN_DEVEL_PREFIX=/home/diego/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/diego/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,567 @@
+xinit y init xdest ydest: 0.497500 0.845000 0.192500 0.472500World environment ../data/room.wrl 
+
+observations file: ../data/room.raw
+
+ Radio robot 0.030000 
+
+
+ ************************************************************
+1 Pose robot 0.497500 0.845000 0.000000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 0 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 0
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 0
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.507722 threshold 0.032000
+
+
+ ************************************************************
+2 Pose robot 0.537500 0.845000 0.000000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 0 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 0
+Present State: 1 RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 0
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.535706 threshold 0.032000
+
+
+ ************************************************************
+3 Pose robot 0.577500 0.845000 0.000000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 0 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 0
+Present State: 2 TURN RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 0
+Present State: 16 RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 -0.785400
+distance destination 0.535706 threshold 0.032000
+
+
+ ************************************************************
+4 Pose robot 0.577500 0.845000 5.497800 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 0 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 0
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 0
+Present State: 3 TURN RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 -0.785400
+distance destination 0.535706 threshold 0.032000
+
+
+ ************************************************************
+5 Pose robot 0.577500 0.845000 4.712400 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 1 RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.508706 threshold 0.032000
+
+
+ ************************************************************
+6 Pose robot 0.577500 0.805000 4.712400 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 2 TURN RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.483510 threshold 0.032000
+
+
+ ************************************************************
+7 Pose robot 0.577501 0.765000 4.712400 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 16 RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.460415 threshold 0.032000
+
+
+ ************************************************************
+8 Pose robot 0.577501 0.725000 4.712400 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 1 RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 3 TURN RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 -0.785400
+distance destination 0.460415 threshold 0.032000
+
+
+ ************************************************************
+9 Pose robot 0.577501 0.725000 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 2 TURN RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.421331 threshold 0.032000
+
+
+ ************************************************************
+10 Pose robot 0.549217 0.696715 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.382436 threshold 0.032000
+
+
+ ************************************************************
+11 Pose robot 0.520933 0.668431 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 1 RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 16 RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.343795 threshold 0.032000
+
+
+ ************************************************************
+12 Pose robot 0.492649 0.640146 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 2 TURN RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 3 TURN RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 -0.785400
+distance destination 0.343795 threshold 0.032000
+
+
+ ************************************************************
+13 Pose robot 0.492649 0.640146 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.309488 threshold 0.032000
+
+
+ ************************************************************
+14 Pose robot 0.452649 0.640146 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 1 LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.276714 threshold 0.032000
+
+
+ ************************************************************
+15 Pose robot 0.412649 0.640146 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 3 TURN LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 16 LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.246087 threshold 0.032000
+
+
+ ************************************************************
+16 Pose robot 0.372649 0.640145 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 5 TURN LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 0.785400
+distance destination 0.246087 threshold 0.032000
+
+
+ ************************************************************
+17 Pose robot 0.372649 0.640145 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 1 RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.206118 threshold 0.032000
+
+
+ ************************************************************
+18 Pose robot 0.344365 0.611861 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 2 TURN RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.166163 threshold 0.032000
+
+
+ ************************************************************
+19 Pose robot 0.316081 0.583576 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 16 RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.126238 threshold 0.032000
+
+
+ ************************************************************
+20 Pose robot 0.287797 0.555292 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 2 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 2
+Present State: 1 RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 2
+Present State: 3 TURN RIGHT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 -0.785400
+distance destination 0.126238 threshold 0.032000
+
+
+ ************************************************************
+21 Pose robot 0.287797 0.555292 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 2 TURN RIGHT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.099560 threshold 0.032000
+
+
+ ************************************************************
+22 Pose robot 0.247797 0.555291 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.084193 threshold 0.032000
+
+
+ ************************************************************
+23 Pose robot 0.207797 0.555291 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 1 LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 16 LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.086398 threshold 0.032000
+
+
+ ************************************************************
+24 Pose robot 0.167797 0.555291 3.141600 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 1 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 1
+Present State: 3 TURN LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 1
+Present State: 5 TURN LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 0.785400
+distance destination 0.086398 threshold 0.032000
+
+
+ ************************************************************
+25 Pose robot 0.167797 0.555291 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.076017 threshold 0.032000
+
+
+ ************************************************************
+26 Pose robot 0.139513 0.527006 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 1 LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.085396 threshold 0.032000
+
+
+ ************************************************************
+27 Pose robot 0.111229 0.498722 3.927000 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 1 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 1
+Present State: 3 TURN LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 1
+Present State: 16 LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 0.785400
+distance destination 0.085396 threshold 0.032000
+
+
+ ************************************************************
+28 Pose robot 0.111229 0.498722 4.712400 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 5 TURN LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 0.785400
+distance destination 0.085396 threshold 0.032000
+
+
+ ************************************************************
+29 Pose robot 0.111229 0.498722 5.497800 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 1 LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.053026 threshold 0.032000
+
+
+ ************************************************************
+30 Pose robot 0.139514 0.470438 5.497800 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 3 TURN LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 1 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+distance destination 0.039129 threshold 0.032000
+
+
+ ************************************************************
+31 Pose robot 0.167798 0.442154 5.497800 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 1 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 1
+Present State: 0 FORWARD
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 1
+Present State: 16 LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 0.785400
+distance destination 0.039129 threshold 0.032000
+
+
+ ************************************************************
+32 Pose robot 0.167798 0.442154 6.283200 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 1 LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 5 TURN LEFT
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.000000 0.785400
+distance destination 0.039129 threshold 0.032000
+
+
+ ************************************************************
+33 Pose robot 0.167798 0.442154 0.785400 
+quantized inputs 0
+quantized intensity 0 
+quantized destination 3 
+Present State: 0 FORWARD
+movement avoidance: angle  0.000000 distance 0.000000
+ obs intensity 0 dest 3
+Present State: 3 TURN LEFT
+movement destination: angle  0.000000 distance 0.000000
+ obs intensity 0 obstacles 0 dest 3
+Present State: 0 FORWARD
+movement avoidance destination: angle  0.000000 distance 0.000000
+mv 0.040000 0.000000
+ reached distance destination 0.004134
+distance destination 0.004134 threshold 0.032000

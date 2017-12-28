@@ -1,0 +1,10 @@
+int32 req
+float32 coord_x
+float32 coord_y
+float32 coord_ang
+---
+int32 flag_dest
+float32 x
+float32 y
+int32 quantized_attraction
+int32 quantized_intensity

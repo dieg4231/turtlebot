@@ -1,0 +1,2 @@
+set(svg_ros_MESSAGE_FILES "")
+set(svg_ros_SERVICE_FILES "/home/savage/catkin_ws/src/svg_ros/srv/InputsSrv.srv;/home/savage/catkin_ws/src/svg_ros/srv/InputsPlannerSrv.srv;/home/savage/catkin_ws/src/svg_ros/srv/MVServ.srv;/home/savage/catkin_ws/src/svg_ros/srv/SensorSrv.srv;/home/savage/catkin_ws/src/svg_ros/srv/LightSrv.srv;/home/savage/catkin_ws/src/svg_ros/srv/OverSrv.srv;/home/savage/catkin_ws/src/svg_ros/srv/ReadySrv.srv")

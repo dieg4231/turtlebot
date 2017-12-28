@@ -1,0 +1,24 @@
+;**********************************************************************
+;* File: cubicle.wrl      *
+;* *
+;**********************************************************************
+
+( limit_area cubicle .000  .000  .000 13.000 8.500 13.000 8.500  .000 )
+( dimensions cubicle 8.500 13.000 )
+( polygon obstacle cubicle_wall1   .000   .000  .000  4.500   .500  4.500   .500   .000 )
+( polygon obstacle cubicle_wall2   .000  4.500  .000  4.900  2.650  4.900  2.650  4.500 )
+( polygon obstacle cubicle_wall3  2.150  4.500 2.650  4.500  2.650   .000  2.150   .000 )
+( polygon obstacle cubicle_wall4   .000  0.000  .000   .500  2.650   .500  2.650  0.000 )
+( polygon obstacle cubicle_wall6  2.650  4.500 2.650  4.900  4.100  4.900  4.100  4.500 )
+( polygon obstacle cubicle_wall7  5.150  4.500 5.650  4.500  5.650   .000  5.150   .000 )
+( polygon obstacle cubicle_wall8  2.650  0.000 2.650   .500  5.650   .500  5.650  0.000 )
+( polygon obstacle cubicle_wall9  5.150  4.500 5.150  4.900  8.100  4.900  8.100  4.500 )
+( polygon obstacle cubicle_wall10   .000 6.700  .000  7.200  4.100  7.200  4.100  6.700 )
+( polygon obstacle cubicle_wall11  5.400 6.700 5.400  7.200  8.100  7.200  8.100  6.700 )
+( polygon obstacle cubicle_wall12   .000 7.200  .000  12.800  .500 12.800   .500  7.200 )
+( polygon obstacle cubicle_wall13   .000 12.500  .000 13.000 5.400 13.000  5.400 12.500 )
+( polygon obstacle cubicle_wall14  5.400 13.000 5.90  13.000 5.900  6.700  5.400  6.700 )
+( polygon obstacle cubicle_table1   .000 7.200  .000  7.800  3.500  7.800  3.500  7.200 )
+( polygon obstacle cubicle_table2   .000 8.650  .000  9.400  1.600  9.400  1.600  8.650 )
+( polygon obstacle cubicle_table3  2.700 8.650  2.700  9.400 4.700  9.400  4.700  8.650 )
+( polygon obstacle cubicle_drawer  4.700 7.700  4.700  9.400 5.400  9.400  5.400  7.700 )
