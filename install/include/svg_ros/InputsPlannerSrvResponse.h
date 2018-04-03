@@ -42,7 +42,8 @@ struct InputsPlannerSrvResponse_
     , pathNAme()
     , fileNAme()
     , flgGUI(0)
-    , flg_noise(0)  {
+    , flg_noise(0)
+    , flg_real_environment(0)  {
     }
   InputsPlannerSrvResponse_(const ContainerAllocator& _alloc)
     : origin_x(0.0)
@@ -63,7 +64,8 @@ struct InputsPlannerSrvResponse_
     , pathNAme(_alloc)
     , fileNAme(_alloc)
     , flgGUI(0)
-    , flg_noise(0)  {
+    , flg_noise(0)
+    , flg_real_environment(0)  {
   (void)_alloc;
     }
 
@@ -125,6 +127,9 @@ struct InputsPlannerSrvResponse_
 
    typedef int32_t _flg_noise_type;
   _flg_noise_type flg_noise;
+
+   typedef int32_t _flg_real_environment_type;
+  _flg_real_environment_type flg_real_environment;
 
 
 
@@ -203,12 +208,12 @@ struct MD5Sum< ::svg_ros::InputsPlannerSrvResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "8f16552e1a74db709956ba597f0eadc7";
+    return "d759259a9c48e22d7e4bb3b06715da4c";
   }
 
   static const char* value(const ::svg_ros::InputsPlannerSrvResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x8f16552e1a74db70ULL;
-  static const uint64_t static_value2 = 0x9956ba597f0eadc7ULL;
+  static const uint64_t static_value1 = 0xd759259a9c48e22dULL;
+  static const uint64_t static_value2 = 0x7e4bb3b06715da4cULL;
 };
 
 template<class ContainerAllocator>
@@ -246,6 +251,7 @@ string pathNAme\n\
 string fileNAme\n\
 int32 flgGUI\n\
 int32 flg_noise\n\
+int32 flg_real_environment\n\
 \n\
 ";
   }
@@ -284,6 +290,7 @@ namespace serialization
       stream.next(m.fileNAme);
       stream.next(m.flgGUI);
       stream.next(m.flg_noise);
+      stream.next(m.flg_real_environment);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -340,6 +347,8 @@ struct Printer< ::svg_ros::InputsPlannerSrvResponse_<ContainerAllocator> >
     Printer<int32_t>::stream(s, indent + "  ", v.flgGUI);
     s << indent << "flg_noise: ";
     Printer<int32_t>::stream(s, indent + "  ", v.flg_noise);
+    s << indent << "flg_real_environment: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.flg_real_environment);
   }
 };
 

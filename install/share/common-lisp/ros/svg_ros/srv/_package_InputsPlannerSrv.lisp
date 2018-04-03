@@ -39,4 +39,6 @@
           FLGGUI
           FLG_NOISE-VAL
           FLG_NOISE
+          FLG_REAL_ENVIRONMENT-VAL
+          FLG_REAL_ENVIRONMENT
 ))

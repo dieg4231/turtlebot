@@ -19,3 +19,4 @@ string pathNAme
 string fileNAme
 int32 flgGUI
 int32 flg_noise
+int32 flg_real_environment

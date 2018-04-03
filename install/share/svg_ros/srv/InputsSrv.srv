@@ -16,5 +16,6 @@ float64 largest_sensor
 string pathNAme
 string fileNAme
 int32 flg_noise
+int32 flg_real_environment
 ---
 int32 success

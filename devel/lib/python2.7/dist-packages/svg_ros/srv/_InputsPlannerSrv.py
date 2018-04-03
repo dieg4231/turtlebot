@@ -105,7 +105,7 @@ import struct
 
 
 class InputsPlannerSrvResponse(genpy.Message):
-  _md5sum = "8f16552e1a74db709956ba597f0eadc7"
+  _md5sum = "d759259a9c48e22d7e4bb3b06715da4c"
   _type = "svg_ros/InputsPlannerSrvResponse"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """float64 origin_x
@@ -127,10 +127,11 @@ string pathNAme
 string fileNAme
 int32 flgGUI
 int32 flg_noise
+int32 flg_real_environment
 
 """
-  __slots__ = ['origin_x','origin_y','origin_angRob','dest_x','dest_y','sensorBool','num_sensorsInt','angle_sensor_orig','range_angleRob','radiusRob','advance','max_angle','num_steps','select','largest_sensor','pathNAme','fileNAme','flgGUI','flg_noise']
-  _slot_types = ['float64','float64','float64','float64','float64','string','int32','float64','float64','float64','float64','float64','int32','int32','float64','string','string','int32','int32']
+  __slots__ = ['origin_x','origin_y','origin_angRob','dest_x','dest_y','sensorBool','num_sensorsInt','angle_sensor_orig','range_angleRob','radiusRob','advance','max_angle','num_steps','select','largest_sensor','pathNAme','fileNAme','flgGUI','flg_noise','flg_real_environment']
+  _slot_types = ['float64','float64','float64','float64','float64','string','int32','float64','float64','float64','float64','float64','int32','int32','float64','string','string','int32','int32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -140,7 +141,7 @@ int32 flg_noise
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       origin_x,origin_y,origin_angRob,dest_x,dest_y,sensorBool,num_sensorsInt,angle_sensor_orig,range_angleRob,radiusRob,advance,max_angle,num_steps,select,largest_sensor,pathNAme,fileNAme,flgGUI,flg_noise
+       origin_x,origin_y,origin_angRob,dest_x,dest_y,sensorBool,num_sensorsInt,angle_sensor_orig,range_angleRob,radiusRob,advance,max_angle,num_steps,select,largest_sensor,pathNAme,fileNAme,flgGUI,flg_noise,flg_real_environment
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -187,6 +188,8 @@ int32 flg_noise
         self.flgGUI = 0
       if self.flg_noise is None:
         self.flg_noise = 0
+      if self.flg_real_environment is None:
+        self.flg_real_environment = 0
     else:
       self.origin_x = 0.
       self.origin_y = 0.
@@ -207,6 +210,7 @@ int32 flg_noise
       self.fileNAme = ''
       self.flgGUI = 0
       self.flg_noise = 0
+      self.flg_real_environment = 0
 
   def _get_types(self):
     """
@@ -252,7 +256,7 @@ int32 flg_noise
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_2i.pack(_x.flgGUI, _x.flg_noise))
+      buff.write(_struct_3i.pack(_x.flgGUI, _x.flg_noise, _x.flg_real_environment))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -300,8 +304,8 @@ int32 flg_noise
         self.fileNAme = str[start:end]
       _x = self
       start = end
-      end += 8
-      (_x.flgGUI, _x.flg_noise,) = _struct_2i.unpack(str[start:end])
+      end += 12
+      (_x.flgGUI, _x.flg_noise, _x.flg_real_environment,) = _struct_3i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -346,7 +350,7 @@ int32 flg_noise
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_2i.pack(_x.flgGUI, _x.flg_noise))
+      buff.write(_struct_3i.pack(_x.flgGUI, _x.flg_noise, _x.flg_real_environment))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -395,18 +399,18 @@ int32 flg_noise
         self.fileNAme = str[start:end]
       _x = self
       start = end
-      end += 8
-      (_x.flgGUI, _x.flg_noise,) = _struct_2i.unpack(str[start:end])
+      end += 12
+      (_x.flgGUI, _x.flg_noise, _x.flg_real_environment,) = _struct_3i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
 _struct_5d = struct.Struct("<5d")
-_struct_2i = struct.Struct("<2i")
+_struct_3i = struct.Struct("<3i")
 _struct_i5d2id = struct.Struct("<i5d2id")
 class InputsPlannerSrv(object):
   _type          = 'svg_ros/InputsPlannerSrv'
-  _md5sum = '188578d1209fb9d01aa3d1efc9744987'
+  _md5sum = 'ca42696d80dbb4fd3a62df396e4b2376'
   _request_class  = InputsPlannerSrvRequest
   _response_class = InputsPlannerSrvResponse

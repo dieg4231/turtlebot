@@ -53,10 +53,10 @@
   "svg_ros/InputsPlannerSrvRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<InputsPlannerSrv-request>)))
   "Returns md5sum for a message object of type '<InputsPlannerSrv-request>"
-  "188578d1209fb9d01aa3d1efc9744987")
+  "ca42696d80dbb4fd3a62df396e4b2376")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'InputsPlannerSrv-request)))
   "Returns md5sum for a message object of type 'InputsPlannerSrv-request"
-  "188578d1209fb9d01aa3d1efc9744987")
+  "ca42696d80dbb4fd3a62df396e4b2376")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<InputsPlannerSrv-request>)))
   "Returns full string definition for message of type '<InputsPlannerSrv-request>"
   (cl:format cl:nil "int32 success~%~%~%"))
@@ -169,6 +169,11 @@
     :reader flg_noise
     :initarg :flg_noise
     :type cl:integer
+    :initform 0)
+   (flg_real_environment
+    :reader flg_real_environment
+    :initarg :flg_real_environment
+    :type cl:integer
     :initform 0))
 )
 
@@ -274,6 +279,11 @@
 (cl:defmethod flg_noise-val ((m <InputsPlannerSrv-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader svg_ros-srv:flg_noise-val is deprecated.  Use svg_ros-srv:flg_noise instead.")
   (flg_noise m))
+
+(cl:ensure-generic-function 'flg_real_environment-val :lambda-list '(m))
+(cl:defmethod flg_real_environment-val ((m <InputsPlannerSrv-response>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader svg_ros-srv:flg_real_environment-val is deprecated.  Use svg_ros-srv:flg_real_environment instead.")
+  (flg_real_environment m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <InputsPlannerSrv-response>) ostream)
   "Serializes a message object of type '<InputsPlannerSrv-response>"
   (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'origin_x))))
@@ -418,6 +428,12 @@
     (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
     )
   (cl:let* ((signed (cl:slot-value msg 'flg_noise)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    )
+  (cl:let* ((signed (cl:slot-value msg 'flg_real_environment)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
@@ -590,6 +606,12 @@
       (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
       (cl:setf (cl:slot-value msg 'flg_noise) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'flg_real_environment) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<InputsPlannerSrv-response>)))
@@ -600,16 +622,16 @@
   "svg_ros/InputsPlannerSrvResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<InputsPlannerSrv-response>)))
   "Returns md5sum for a message object of type '<InputsPlannerSrv-response>"
-  "188578d1209fb9d01aa3d1efc9744987")
+  "ca42696d80dbb4fd3a62df396e4b2376")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'InputsPlannerSrv-response)))
   "Returns md5sum for a message object of type 'InputsPlannerSrv-response"
-  "188578d1209fb9d01aa3d1efc9744987")
+  "ca42696d80dbb4fd3a62df396e4b2376")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<InputsPlannerSrv-response>)))
   "Returns full string definition for message of type '<InputsPlannerSrv-response>"
-  (cl:format cl:nil "float64 origin_x~%float64 origin_y~%float64 origin_angRob~%float64 dest_x~%float64 dest_y~%string sensorBool~%int32 num_sensorsInt~%float64 angle_sensor_orig~%float64 range_angleRob~%float64 radiusRob~%float64 advance~%float64 max_angle~%int32 num_steps~%int32 select~%float64 largest_sensor~%string pathNAme~%string fileNAme~%int32 flgGUI~%int32 flg_noise~%~%~%~%"))
+  (cl:format cl:nil "float64 origin_x~%float64 origin_y~%float64 origin_angRob~%float64 dest_x~%float64 dest_y~%string sensorBool~%int32 num_sensorsInt~%float64 angle_sensor_orig~%float64 range_angleRob~%float64 radiusRob~%float64 advance~%float64 max_angle~%int32 num_steps~%int32 select~%float64 largest_sensor~%string pathNAme~%string fileNAme~%int32 flgGUI~%int32 flg_noise~%int32 flg_real_environment~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'InputsPlannerSrv-response)))
   "Returns full string definition for message of type 'InputsPlannerSrv-response"
-  (cl:format cl:nil "float64 origin_x~%float64 origin_y~%float64 origin_angRob~%float64 dest_x~%float64 dest_y~%string sensorBool~%int32 num_sensorsInt~%float64 angle_sensor_orig~%float64 range_angleRob~%float64 radiusRob~%float64 advance~%float64 max_angle~%int32 num_steps~%int32 select~%float64 largest_sensor~%string pathNAme~%string fileNAme~%int32 flgGUI~%int32 flg_noise~%~%~%~%"))
+  (cl:format cl:nil "float64 origin_x~%float64 origin_y~%float64 origin_angRob~%float64 dest_x~%float64 dest_y~%string sensorBool~%int32 num_sensorsInt~%float64 angle_sensor_orig~%float64 range_angleRob~%float64 radiusRob~%float64 advance~%float64 max_angle~%int32 num_steps~%int32 select~%float64 largest_sensor~%string pathNAme~%string fileNAme~%int32 flgGUI~%int32 flg_noise~%int32 flg_real_environment~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <InputsPlannerSrv-response>))
   (cl:+ 0
      8
@@ -629,6 +651,7 @@
      8
      4 (cl:length (cl:slot-value msg 'pathNAme))
      4 (cl:length (cl:slot-value msg 'fileNAme))
+     4
      4
      4
 ))
@@ -654,6 +677,7 @@
     (cl:cons ':fileNAme (fileNAme msg))
     (cl:cons ':flgGUI (flgGUI msg))
     (cl:cons ':flg_noise (flg_noise msg))
+    (cl:cons ':flg_real_environment (flg_real_environment msg))
 ))
 (cl:defmethod roslisp-msg-protocol:service-request-type ((msg (cl:eql 'InputsPlannerSrv)))
   'InputsPlannerSrv-request)

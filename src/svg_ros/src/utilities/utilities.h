@@ -484,18 +484,65 @@ int quantize_intensity(coord coord_robot,coord coor_destination){
 */
 
 
+// it gets the range from the laser sensors
+void get_average_sensor(Raw observations, int start, int end, float *average){
+ int i;
+ float sd=0;
+
+ //printf("range %d %d\n",start,end); 
+ for(i=start; i < end;i++){
+        sd=sd + observations.sensors[i];
+        //printf("%d %f %f\n",i,sd,observations.sensors[i]); 
+ }
+
+ *average = sd/(float)(end-start);
+ //printf(" average %f\n\n",*average);
+}
+
+
+int quantize_inputs(Raw observations, int size){
+
+ int value=0;
+ int i;
+ float left,right;
+ int interval;
+
+
+
+ interval = size/2;
+ get_average_sensor(observations,interval,size,&left);
+ //printf("left sensor %f\n",left);
+ get_average_sensor(observations,0,interval,&right);
+ //printf("right sensor %f\n",right);
+
+ if( left < THRS_SENSOR) value = (value << 1) + 1;
+ else value = (value << 1) + 0;
+
+ if( right < THRS_SENSOR) value = (value << 1) + 1;
+ else value = (value << 1) + 0;
+
+ //printf("value %d\n",value);
+ value = value & 0xFFFFFFFF;
+ //printf("value %x\n",value); 
+
+ return(value);
+
+}
+
 
 // it gets the range from the laser sensors
-void get_average_sensor(Raw observations, int start, int end, float *average,float largest_value){
+void get_average_sensor_real(Raw observations, int start, int end, float *average,float largest_value){
  int i;
  float sd=0;
  float distancia=largest_value;
  float bad_lecture=0;
  //printf("range %d %d\n",start,end); 
  for(i=start; i < end;i++){
+        
+  //      printf("%f, ",observations.sensors[i] );
         if(observations.sensors[i]>= distancia )
           sd=sd + distancia;
-        else if (observations.sensors[i] == 0)
+        else if (observations.sensors[i] ==0 ) // Checks if a value is  NaN
           bad_lecture++;
         else
           sd=sd + observations.sensors[i];
@@ -504,7 +551,7 @@ void get_average_sensor(Raw observations, int start, int end, float *average,flo
 
  *average = sd/( ((float)(end-start))-bad_lecture );
 
- printf("AVG %f  \n",*average );
+// printf("\n%f/( (%d-%d) - %f ) = AVG %f  \n",sd,end,start,bad_lecture,*average );
  
  //printf(" average %f\n\n",*average);
 /**average = 0;
@@ -524,7 +571,7 @@ void get_average_sensor(Raw observations, int start, int end, float *average,flo
 
 
  // It quantizes the inputs
-int quantize_inputs(Raw observations, int size,float largest_value){
+int quantize_inputs_real(Raw observations, int size,float largest_value){
 
  int value=0;
  int i;
@@ -532,9 +579,9 @@ int quantize_inputs(Raw observations, int size,float largest_value){
  int interval;
 
  interval = size/2;
- get_average_sensor(observations,interval,size,&left,largest_value);
+ get_average_sensor_real(observations,interval,size,&left,largest_value);
  //printf("left sensor %f\n",left);
- get_average_sensor(observations,0,interval,&right,largest_value);
+ get_average_sensor_real(observations,0,interval,&right,largest_value);
  //printf("right sensor %f\n",right);
 
  //if( left < THRS_SENSOR) value = (value << 1) + 1;
@@ -683,8 +730,8 @@ void  mvrobot(AdvanceAngle DistTheta,coord *coord_robot ){
 
  sprintf(param,"mv %f %f ",distance,angle1);
  printf("mv %f %f ",distance,angle1);
- //ROS_mvrobot(param,&answer_distance, &answer_angle);
- ROS_mvrobot_turtle(param,&answer_distance, &answer_angle);
+ ROS_mvrobot(param,&answer_distance, &answer_angle);
+ //ROS_mvrobot_turtle(param,&answer_distance, &answer_angle);
  angle1 = answer_angle;
  distance = answer_distance;
 

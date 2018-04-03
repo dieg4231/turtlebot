@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::svg_ros::InputsSrv > {
   static const char* value()
   {
-    return "f39e8e9b737ca0cd747aac4db3741413";
+    return "5cf400e1499a2adc5d3432359ab2d9eb";
   }
 
   static const char* value(const ::svg_ros::InputsSrv&) { return value(); }

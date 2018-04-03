@@ -73,8 +73,9 @@ void initialize(Inputs * inputs){
 	inputs->number_steps= LIMIT_SIM;
 	inputs->selection = 1;
 	inputs->largest_value = LARGEST_DISTANCE_SENSORS;
-        inputs->flgGUI = flgGUI;
-        inputs->flg_noise = 1;
+    inputs->flgGUI = flgGUI;
+    inputs->flg_noise = 1;
+    inputs->flg_noise = 1;
 }
 
 
@@ -103,6 +104,7 @@ bool get_data_GUI(svg_ros::InputsSrv::Request &req, svg_ros::InputsSrv::Response
 	strcpy(inputsT.path,(req.pathNAme).c_str());
 	strcpy(inputsT.environment,(req.fileNAme).c_str());
 	inputsT.flg_noise = req.flg_noise;
+	inputsT.flg_real_environment = req.flg_real_environment;
 
 
 	//ROS_INFO("geting inputs from GUI: x=%f y=%f",(float)req.origin_x,(float)req.origin_y);
@@ -140,6 +142,7 @@ bool send_data_nodes(svg_ros::InputsPlannerSrv::Request &req, svg_ros::InputsPla
 	res.pathNAme = inputsT.path;
 	res.fileNAme = inputsT.environment;
 	res.flg_noise = inputsT.flg_noise;
+	res.flg_real_environment = inputsT.flg_real_environment;
 
 	//ROS_INFO("sending back inputs: [ %f %f ]", (float)res.origin_x, (float)res.origin_y);
 

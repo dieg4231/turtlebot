@@ -1,11 +1,11 @@
 /********************************************************
  *                                                      *
  *                                                      *
- *      state_machine_avoidance_destination.h          	*
+ *      state_machine_avoidance_destination.h           *
  *                                                      *
- *		Jesus Savage				*
- *		FI-UNAM					*
- *		5-2-2015                                *
+ *      Jesus Savage                *
+ *      FI-UNAM                 *
+ *      5-2-2015                                *
  *                                                      *
  ********************************************************/
 
@@ -22,14 +22,14 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
         case 0:
                 if (intensity == 1){
                         gen_vector=generate_output(STOP,Mag_Advance,max_angle);
-			//printf("Present State: %d STOP\n", state);
+            //printf("Present State: %d STOP\n", state);
                         printf("\n **************** Reached light source ******************************\n");
                         *next_state = 1;
 
                 }
                 else{
 
-			gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
+            gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
                         //printf("Present State: %d FORWARD\n", state);
                         *next_state = 1;
                 }
@@ -38,7 +38,7 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
 
         case 1:
                 if (obs == 0){
-			// there is not obstacle
+            // there is not obstacle
                         gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
                         //printf("Present State: %d FORWARD\n", state);
                         *next_state = 16;
@@ -56,7 +56,7 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
                                 *next_state = 2;
                         }
                         else if (obs == 3){
-				// obstacle in the front
+                // obstacle in the front
                                 *next_state = 6;
                         }
                 }
@@ -65,49 +65,49 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
 
         case 2: // Backward, obstacle in the left
                 gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
-		//printf("Present State: %d BACKWARD, obstacle LEFT\n", state);
+        //printf("Present State: %d BACKWARD, obstacle LEFT\n", state);
                 *next_state = 3;
                 break;
 
         case 3: // right turn
                 gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
-		//printf("Present State: %d TURN RIGHT\n", state);
+        //printf("Present State: %d TURN RIGHT\n", state);
                 *next_state = 0;
                 break;
 
         case 4: // Backward, obstacle in the right
                 gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
-		//printf("Present State: %d BACKWARD, obstacle RIGHT\n", state);
+        //printf("Present State: %d BACKWARD, obstacle RIGHT\n", state);
                 *next_state = 5;
                 break;
 
         case 5: // left turn
                 gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-		//printf("Present State: %d TURN LEFT\n", state);
+        //printf("Present State: %d TURN LEFT\n", state);
                 *next_state = 0;
                 break;
 
         case 6: // Backward, obstacle in front
                 gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
-		//printf("Present State: %d BACKWARD, obstacle FRONT\n", state);
+        //printf("Present State: %d BACKWARD, obstacle FRONT\n", state);
                 *next_state = 7;
                 break;
 
-	case 7: /// Left turn
+    case 7: /// Left turn
                 gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-		//printf("Present State: %d TURN 1 LEFT\n", state);
+        //printf("Present State: %d TURN 1 LEFT\n", state);
                 *next_state = 8;
                 break;
 
         case 8:// Left turn
                 gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-		//printf("Present State: %d TURN 2 LEFT\n", state);
+        //printf("Present State: %d TURN 2 LEFT\n", state);
                 *next_state = 9;
                 break;
 
         case 9:// Left turn
                 gen_vector=generate_output(LEFT,Mag_Advance,max_angle);
-		//printf("Present State: %d TURN 3 LEFT\n", state);
+        //printf("Present State: %d TURN 3 LEFT\n", state);
                 *next_state = 10;
                 break;
 
@@ -129,7 +129,7 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
                 *next_state = 13;
                 break;
 
-	case 13: // Right turn
+    case 13: // Right turn
                 gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
                 //printf("Present State: %d turn 1 RIGHT\n", state);
                 *next_state = 14;
@@ -149,7 +149,7 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
 
 
         case 16: // // check destination
-		 if (dest == 0){
+         if (dest == 0){
                                 // go right
                                 gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
                                 //printf("Present State: %d RIGHT\n", state);
@@ -175,8 +175,8 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
                  }
                 break;
 
-	default:
-		//printf("State %d not defined used ", state);
+    default:
+        //printf("State %d not defined used ", state);
                 gen_vector=generate_output(STOP,Mag_Advance,max_angle);
                 next_state = 0;
                 break;
@@ -192,4 +192,3 @@ AdvanceAngle state_machine_avoidance_destination(int obs, int dest, int intensit
 
 
                  
-

@@ -463,6 +463,8 @@ ros/macros.h
 -
 map
 -
+vector
+-
 log4cxx/level.h
 /opt/ros/indigo/include/ros/log4cxx/level.h
 rosconsole/macros_generated.h

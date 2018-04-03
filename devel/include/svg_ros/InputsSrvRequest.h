@@ -41,7 +41,8 @@ struct InputsSrvRequest_
     , largest_sensor(0.0)
     , pathNAme()
     , fileNAme()
-    , flg_noise(0)  {
+    , flg_noise(0)
+    , flg_real_environment(0)  {
     }
   InputsSrvRequest_(const ContainerAllocator& _alloc)
     : origin_x(0.0)
@@ -61,7 +62,8 @@ struct InputsSrvRequest_
     , largest_sensor(0.0)
     , pathNAme(_alloc)
     , fileNAme(_alloc)
-    , flg_noise(0)  {
+    , flg_noise(0)
+    , flg_real_environment(0)  {
   (void)_alloc;
     }
 
@@ -120,6 +122,9 @@ struct InputsSrvRequest_
 
    typedef int32_t _flg_noise_type;
   _flg_noise_type flg_noise;
+
+   typedef int32_t _flg_real_environment_type;
+  _flg_real_environment_type flg_real_environment;
 
 
 
@@ -198,12 +203,12 @@ struct MD5Sum< ::svg_ros::InputsSrvRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "5ceca0c2c8a6865d3f0a8e5d5f124654";
+    return "a0b6f7ea759edc559d7aa6d97f04a443";
   }
 
   static const char* value(const ::svg_ros::InputsSrvRequest_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x5ceca0c2c8a6865dULL;
-  static const uint64_t static_value2 = 0x3f0a8e5d5f124654ULL;
+  static const uint64_t static_value1 = 0xa0b6f7ea759edc55ULL;
+  static const uint64_t static_value2 = 0x9d7aa6d97f04a443ULL;
 };
 
 template<class ContainerAllocator>
@@ -240,6 +245,7 @@ float64 largest_sensor\n\
 string pathNAme\n\
 string fileNAme\n\
 int32 flg_noise\n\
+int32 flg_real_environment\n\
 ";
   }
 
@@ -276,6 +282,7 @@ namespace serialization
       stream.next(m.pathNAme);
       stream.next(m.fileNAme);
       stream.next(m.flg_noise);
+      stream.next(m.flg_real_environment);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -330,6 +337,8 @@ struct Printer< ::svg_ros::InputsSrvRequest_<ContainerAllocator> >
     Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.fileNAme);
     s << indent << "flg_noise: ";
     Printer<int32_t>::stream(s, indent + "  ", v.flg_noise);
+    s << indent << "flg_real_environment: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.flg_real_environment);
   }
 };
 

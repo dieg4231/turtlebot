@@ -297,6 +297,22 @@ class PLANNER(object):
                 	self.noise.deselect()
                 	self.add_noise.set(1)
 
+            # Check button real environment
+
+			self.var_real_environment = IntVar()
+
+			def command_real_environment():
+				if self.var_real_environment.get() == 0:
+					self.real_environment.select()
+					self.var_real_environment.set(1)
+				else:
+					self.real_environment.deselect()
+					self.var_real_environment.set(0)
+
+			#Real environment
+			self.real_environment = tk.Checkbutton(self.topLevelWindow, text="Real environment", variable= self.var_real_environment,command=command_real_environment)
+			self.real_environment.deselect()
+			self.var_real_environment.set(0)
 
 			# Number of sensors 
 			self.label_num_sensors = tk.Label(self.topLevelWindow,text =  'Num. Sensors')
@@ -391,6 +407,7 @@ class PLANNER(object):
 			self.Movement.grid({'row':0, 'column': 2})
 			self.sensor.grid({'row':1, 'column': 2})
 			self.noise.grid({'row':2, 'column': 2})
+			self.real_environment.grid({'row':3, 'column': 2})
 			self.label_num_sensors.grid({'row':1, 'column': 3})        
 			self.num_sensors.grid({'row':1, 'column': 4})        
 			self.label_origen_angle.grid({'row':2, 'column': 3})        
@@ -465,6 +482,7 @@ class PLANNER(object):
 		pathNAme = self.path.get()
 		fileNAme = self.file.get()
 		flg_noise = self.add_noise.get()
+		flg_real_environment = self.var_real_environment.get()
 	
 	
 		#print "Sending arguments to the Input node"
@@ -472,7 +490,7 @@ class PLANNER(object):
 		try:
 			sendInputs=rospy.ServiceProxy('sendInputs',InputsSrv)			
 			resp=sendInputs(origin_x,origin_y,origin_angRob,dest_x,dest_y,sensorBool,num_sensorsInt,angle_sensor_orig, 
-					range_angleRob,radiusRob,advance,max_angle,num_steps,select,largest_sensor,pathNAme,fileNAme,flg_noise)
+					range_angleRob,radiusRob,advance,max_angle,num_steps,select,largest_sensor,pathNAme,fileNAme,flg_noise,flg_real_environment)
 		except rospy.ServiceException, e:
 			print "Service call failed %s"%e
 		return resp.success
@@ -1224,7 +1242,6 @@ if __name__ == '__main__':
 	print "GUI node started"
 	thread_plot_execute = threading.Thread(target=ThreadPlotExecute, args=(queue, running))
 	thread_plot_execute.start()
-
 
 	gui_planner = PLANNER()
 	tk.mainloop()

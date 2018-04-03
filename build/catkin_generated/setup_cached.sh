@@ -14,4 +14,4 @@ export PKG_CONFIG_PATH="/home/diego/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PA
 export PWD="/home/diego/catkin_ws/build"
 export PYTHONPATH="/home/diego/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/diego/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/diego/catkin_ws/src:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/diego/catkin_ws/src:/home/diego/catkin_ws_/src:$ROS_PACKAGE_PATH"

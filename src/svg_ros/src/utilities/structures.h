@@ -74,6 +74,7 @@ typedef struct _Inputs{
  float largest_value;
  int flgGUI;
  int flg_noise;
+ int flg_real_environment;
 
 } Inputs;
 

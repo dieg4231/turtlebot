@@ -215,7 +215,6 @@ class PLANNER(object):
 #________________________________________ BUTTONS''DEFINITIONS ______________________________________________________________________________________________________________________________
 			self.label_title = tk.Label(self.topLevelWindow,width = 20,height=2,text =  "Movement and direction")
 			# Plot Robot button
-			photo = PhotoImage(file="../GUI/arrow.png")
 			self.Button0 =tk.Button(self.topLevelWindow, width = 2, height=1, text = ">", bg = 'green', activebackground = 'green', command = self.turn270)
 			self.countRobot = 0
 
@@ -324,7 +323,7 @@ class PLANNER(object):
 		coord_x=.5
 		coord_y=.5
 		coord_ang=self.global_angle
-		print 'holaholaa'
+		
 
 		rospy.wait_for_service('receptor')
 		try:

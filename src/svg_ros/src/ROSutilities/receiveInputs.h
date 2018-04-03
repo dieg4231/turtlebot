@@ -43,6 +43,7 @@ int receiveInputs(Inputs *inp,std::string s)
 	strcpy(inp->path,(srv.response.pathNAme).c_str());
 	strcpy(inp->environment,(srv.response.fileNAme).c_str());
 	inp->flg_noise = srv.response.flg_noise;
+	inp->flg_real_environment = srv.response.flg_real_environment;
 	//printf("xinit %f yinit %f xdest %f ydest %f \n", 
 			//(float)srv.response.origin_x, (float)srv.response.origin_y, (float)srv.response.dest_x, (float)srv.response.dest_y);
 	//printf("flg_noise %d\n",srv.response.flg_noise);

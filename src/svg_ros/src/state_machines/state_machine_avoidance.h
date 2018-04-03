@@ -44,7 +44,7 @@ AdvanceAngle state_machine_avoidance(int obs, int state, int *next_state,float M
                 break;
 
         case 1: // Backward, obstacle in the right
-                gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
+                gen_vector=generate_output(BACKWARD,Mag_Advance*4,max_angle);
                 printf("Present State: %d BACKWARD, obstacle RIGHT\n", state);
                 *next_state = 2;
                 break;
@@ -56,7 +56,7 @@ AdvanceAngle state_machine_avoidance(int obs, int state, int *next_state,float M
                 break;
 
         case 3: // Backward, obstacle in the left
-                gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
+                gen_vector=generate_output(BACKWARD,Mag_Advance*4,max_angle);
                 printf("Present State: %d BACKWARD, obstacle LEFT\n", state);
                 *next_state = 4;
                 break;
@@ -68,7 +68,7 @@ AdvanceAngle state_machine_avoidance(int obs, int state, int *next_state,float M
                 break;
         case 5: // Backward, obstacle in front
 
-                gen_vector=generate_output(BACKWARD,Mag_Advance,max_angle);
+                gen_vector=generate_output(BACKWARD,Mag_Advance*4,max_angle);
                 printf("Present State: %d BACKWARD, obstacle FRONT\n", state);
                 *next_state = 6;
                 break;
@@ -150,13 +150,45 @@ AdvanceAngle state_machine_avoidance(int obs, int state, int *next_state,float M
                 
                 break;
 
-        case 12: // Right turn
-                gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
-                printf("Present State: %d TURN 1 RIGHT\n", state);
-                *next_state = 13;
+        case 12: // Forward
+                if(obs!=0)
+                {
+                        gen_vector=generate_output(STOP,Mag_Advance,max_angle);
+                        printf("Present State: %d STOP, obstacle FRONT\n", state);
+                        *next_state = 0;
+                }
+                else
+                {
+                        gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
+                        printf("Present State: %d 2 FORWARD\n", state);
+                        *next_state = 13;   
+                }
+                
                 break;
 
-        case 13: // Right turn
+        case 13: // Forward
+                if(obs!=0)
+                {
+                        gen_vector=generate_output(STOP,Mag_Advance,max_angle);
+                        printf("Present State: %d STOP, obstacle FRONT\n", state);
+                        *next_state = 0;
+                }
+                else
+                {
+                        gen_vector=generate_output(FORWARD,Mag_Advance,max_angle);
+                        printf("Present State: %d 2 FORWARD\n", state);
+                        *next_state = 14;   
+                }
+                
+                break;
+
+        case 14: // Right turn
+                gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
+                printf("Present State: %d TURN 1 RIGHT\n", state);
+                *next_state = 15;
+                break;
+
+        case 15: // Right turn
                 gen_vector=generate_output(RIGHT,Mag_Advance,max_angle);
                 printf("Present State: %d TURN 2 RIGHT\n", state);
                 *next_state = 0;

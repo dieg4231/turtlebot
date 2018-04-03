@@ -132,6 +132,7 @@ int flag_avoidance=0;
 	usleep(10000);
  }	
 
+printf(" Real environment %d \n",inputs.flg_real_environment );
  strcpy(inputs.sensor,"laser");
 
  // it opens the observation's sensor file to be plot by the graphical interface
@@ -206,7 +207,8 @@ next_state_avoidance=0;
 	write_obs_sensor_pos(fpw,observations,inputs.sensor,inputs.num_sensors,inputs.theta_sensor,inputs.range_sensor,coord_robot);
 
 	// It quantizes the laser inputs
-	quantized_obs=quantize_inputs(observations,inputs.num_sensors,largest_value);
+	//quantize_inputs(observations,inputs.num_sensors,largest_value);
+	quantized_obs=quantize_inputs(observations,inputs.num_sensors);
 	//printf("quantized inputs %d\n",quantized_obs);
 
 
@@ -248,16 +250,16 @@ next_state_avoidance=0;
 					// It calculates the robot's movement using an state machine avoidance
 					
 			           GetObservations(&coord_robot,&observations,largest_value);
-						quantized_obs=quantize_inputs(observations,inputs.num_sensors,largest_value);
+						quantized_obs=quantize_inputs(observations,inputs.num_sensors);
 							
 
-					if (state==0 && next_state_avoidance==0)
+/*					if (state==0 && next_state_avoidance==0)
 						while(state==0 && quantized_obs==0)
 						{
 							GetObservations(&coord_robot,&observations,largest_value);
 							quantized_obs=quantize_inputs(observations,inputs.num_sensors,largest_value);	
 							//usleep(1000000);
-						}
+						}*/
 					
 					
 
@@ -278,7 +280,7 @@ next_state_avoidance=0;
 					
 	        	
 			        GetObservations(&coord_robot,&observations,largest_value);
-					quantized_obs=quantize_inputs(observations,inputs.num_sensors,largest_value);
+					quantized_obs=quantize_inputs(observations,inputs.num_sensors);
 												
 
 					state=next_state_avoidance;
@@ -292,13 +294,7 @@ next_state_avoidance=0;
 
             case 2:
              
-            while(xyz)
-			{
-				GetObservations(&coord_robot,&observations,largest_value);
-				quantized_obs=quantize_inputs(observations,inputs.num_sensors,largest_value);	
-				printf("Muestreo %d\n",xyz++);
-			}
-
+        
            
 		// It calculates the robot's movement using an state machine destination
 		state=next_state_destination;
